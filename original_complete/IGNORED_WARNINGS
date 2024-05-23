@@ -1,7 +1,17 @@
-INCOMPLETE_MC_WRONGLY_COMPLETED_WARNING (3, 13) ms3.Parse.original_complete.B015 -- /home/laser/.cache/pre-commit/repo2pldy3c5/py_env-python3.10/lib/python3.10/site-packages/ms3/bs4_measures.py (line 416) which_mcs_to_offset():
+INCOMPLETE_MC_WRONGLY_COMPLETED_WARNING (3, 13) ms3.Parse.original_complete.B015
 	None of the MCs following the irregular MC 13 complete it.
 	Both Breitkopf 1784-87 and Breitkopf 1898 have an irregular measure m. 11 of length 2/4.
-COMPETING_MEASURE_INFO_WARNING (9, 'mc', 1, 'voice/KeySig/accidental') ms3.Parse.original_complete.B027 -- /home/laser/miniconda3/lib/python3.11/site-packages/ms3/bs4_measures.py (line 171) squash_staves():
+
+COMPETING_MEASURE_INFO_WARNING (9, 'mc', 1, 'voice/KeySig/accidental') ms3.Parse.original_complete.B027
 	mc 1: The values ['2' '3'] in 'voice/KeySig/accidental' of 'staff' [2, 5] are lost.
+
+INCOMPLETE_MC_WRONGLY_COMPLETED_WARNING (3, 22) ms3.Parse.original_complete.B036
+	None of the MCs following the irregular MC 22 complete it.
+	This follows the print which has two double barlines; the third section begins with an anacrusis.
+
+INCOMPLETE_MC_WRONGLY_COMPLETED_WARNING (3, 5) ms3.Parse.original_complete.B038
+	Some of the MCs following the irregular MC 5 do, some don't complete it.
+	This should be notated with a first and second ending in m. 4, where 4b ends on a half note.
+
 COMPETING_MEASURE_INFO_WARNING (9, 'mc', 1, 'voice/KeySig/accidental') ms3.Parse.original_complete.B378
 	mc 1: The missing value in 'voice/KeySig/accidental' was filled with '-1', present in 'staff' [3].
