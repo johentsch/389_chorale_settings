@@ -41,11 +41,7 @@
       <pageWidth>8.27007</pageWidth>
       <pageHeight>11.6901</pageHeight>
       <pagePrintableWidth>7.48267</pagePrintableWidth>
-      <pageEvenLeftMargin>0.393701</pageEvenLeftMargin>
-      <pageOddLeftMargin>0.393701</pageOddLeftMargin>
-      <pageEvenTopMargin>0.393701</pageEvenTopMargin>
       <pageEvenBottomMargin>0.393701</pageEvenBottomMargin>
-      <pageOddTopMargin>0.393701</pageOddTopMargin>
       <pageOddBottomMargin>0.393701</pageOddBottomMargin>
       <akkoladeDistance>6.3</akkoladeDistance>
       <minSystemDistance>7.5</minSystemDistance>
@@ -263,7 +259,7 @@
         <bracket type="1" span="2" col="0"/>
         </Staff>
       <trackName>Soprano/Alto</trackName>
-      <Instrument>
+      <Instrument id="voice">
         <trackName>Soprano/Alto</trackName>
         <minPitchP>55</minPitchP>
         <maxPitchP>84</maxPitchP>
@@ -299,6 +295,7 @@
           <gateTime>100</gateTime>
           </Articulation>
         <Channel>
+          <controller ctrl="32" value="17"/>
           <program value="52"/>
           <controller ctrl="7" value="124"/>
           <controller ctrl="10" value="45"/>
@@ -316,7 +313,7 @@
         <defaultClef>F</defaultClef>
         </Staff>
       <trackName>Tenor/Bass</trackName>
-      <Instrument>
+      <Instrument id="voice">
         <trackName>Tenor/Bass</trackName>
         <minPitchP>38</minPitchP>
         <maxPitchP>69</maxPitchP>
@@ -353,6 +350,7 @@
           <gateTime>100</gateTime>
           </Articulation>
         <Channel>
+          <controller ctrl="32" value="17"/>
           <program value="52"/>
           <controller ctrl="7" value="118"/>
           <controller ctrl="10" value="77"/>
@@ -372,7 +370,7 @@
         </Staff>
       <show>0</show>
       <trackName>Contrabass</trackName>
-      <Instrument>
+      <Instrument id="contrabass">
         <longName>Contrabass</longName>
         <shortName>Cb.</shortName>
         <trackName>Contrabass</trackName>
@@ -414,6 +412,7 @@
           <gateTime>100</gateTime>
           </Articulation>
         <Channel>
+          <controller ctrl="32" value="17"/>
           <program value="43"/>
           <controller ctrl="7" value="71"/>
           <controller ctrl="10" value="50"/>
@@ -426,6 +425,7 @@
           <synti>Fluid</synti>
           </Channel>
         <Channel name="tremolo">
+          <controller ctrl="32" value="17"/>
           <program value="44"/>
           <synti>Fluid</synti>
           </Channel>
@@ -452,13 +452,18 @@ B. Schmid Tabulaturbuch 1577
           </Text>
         <Text>
           <style>Title</style>
-          <offset x="13.8985" y="-0.4769"/>
+          <offset x="22.8814" y="-0.117583"/>
           <text>153. Herzlich lieb hab' ich Dich, o Herr</text>
           </Text>
         <Text>
           <style>Lyricist</style>
-          <offset x="38.1269" y="-1.1269"/>
+          <offset x="48.5471" y="-0.767583"/>
           <text>Martin Schalling 1571</text>
+          </Text>
+        <Text>
+          <style>Frame</style>
+          <offset x="48.5292" y="20.5469"/>
+          <text>(Left:) From the Alto Aria (2): &quot;Er hat mich auch am höchsten lieb&quot; </text>
           </Text>
         <Image>
           <offset x="-6.19797" y="-6.38579"/>
@@ -466,11 +471,6 @@ B. Schmid Tabulaturbuch 1577
           <linkPath>/home/gertim/Pictures/Erhat mich auch an höchsten lieb.png</linkPath>
           <size w="42.0546" h="40.0894"/>
           </Image>
-        <Text>
-          <style>Frame</style>
-          <offset x="44.3971" y="15.5165"/>
-          <text>(Left:) From the Alto Aria (2): &quot;Er hat mich auch am höchsten lieb&quot; </text>
-          </Text>
         </VBox>
       <Measure len="1/4">
         <irregular>1</irregular>
@@ -1262,6 +1262,7 @@ B. Schmid Tabulaturbuch 1577
           </voice>
         </Measure>
       <Measure len="1/4">
+        <irregular>1</irregular>
         <voice>
           <Chord>
             <durationType>quarter</durationType>
@@ -4231,8 +4232,6 @@ B. Schmid Tabulaturbuch 1577
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -4250,8 +4249,6 @@ B. Schmid Tabulaturbuch 1577
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>33</pitch>
               <tpc>17</tpc>
@@ -4259,8 +4256,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>35</pitch>
               <tpc>19</tpc>
@@ -4268,8 +4263,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>37</pitch>
               <tpc>21</tpc>
@@ -4277,8 +4270,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -4296,8 +4287,6 @@ B. Schmid Tabulaturbuch 1577
         <voice>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>31</pitch>
               <tpc>15</tpc>
@@ -4305,8 +4294,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>33</pitch>
               <tpc>17</tpc>
@@ -4315,8 +4302,6 @@ B. Schmid Tabulaturbuch 1577
           <Chord>
             <BeamMode>begin</BeamMode>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>35</pitch>
               <tpc>19</tpc>
@@ -4324,8 +4309,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>37</pitch>
               <tpc>21</tpc>
@@ -4333,8 +4316,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -4342,8 +4323,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>35</pitch>
               <tpc>19</tpc>
@@ -4361,8 +4340,6 @@ B. Schmid Tabulaturbuch 1577
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>42</pitch>
               <tpc>20</tpc>
@@ -4370,8 +4347,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>43</pitch>
               <tpc>15</tpc>
@@ -4379,8 +4354,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>45</pitch>
               <tpc>17</tpc>
@@ -4388,8 +4361,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>47</pitch>
               <tpc>19</tpc>
@@ -4397,8 +4368,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>45</pitch>
               <tpc>17</tpc>
@@ -4416,8 +4385,6 @@ B. Schmid Tabulaturbuch 1577
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalSharp</subtype>
@@ -4428,8 +4395,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>37</pitch>
               <tpc>21</tpc>
@@ -4437,8 +4402,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>42</pitch>
               <tpc>20</tpc>
@@ -4446,8 +4409,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -4465,8 +4426,6 @@ B. Schmid Tabulaturbuch 1577
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>43</pitch>
               <tpc>15</tpc>
@@ -4474,8 +4433,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>45</pitch>
               <tpc>17</tpc>
@@ -4483,8 +4440,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>47</pitch>
               <tpc>19</tpc>
@@ -4492,8 +4447,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>45</pitch>
               <tpc>17</tpc>
@@ -4501,8 +4454,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>43</pitch>
               <tpc>15</tpc>
@@ -4531,8 +4482,6 @@ B. Schmid Tabulaturbuch 1577
                   </location>
                 </next>
               </Spanner>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>45</pitch>
               <tpc>17</tpc>
@@ -4547,8 +4496,6 @@ B. Schmid Tabulaturbuch 1577
                   </location>
                 </prev>
               </Spanner>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>33</pitch>
               <tpc>17</tpc>
@@ -4556,8 +4503,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -4574,8 +4519,6 @@ B. Schmid Tabulaturbuch 1577
         <voice>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>50</pitch>
               <tpc>16</tpc>
@@ -4583,8 +4526,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>49</pitch>
               <tpc>21</tpc>
@@ -4602,8 +4543,6 @@ B. Schmid Tabulaturbuch 1577
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>47</pitch>
               <tpc>19</tpc>
@@ -4611,8 +4550,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalSharp</subtype>
@@ -4623,8 +4560,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>47</pitch>
               <tpc>19</tpc>
@@ -4632,8 +4567,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalNatural</subtype>
@@ -4645,8 +4578,6 @@ B. Schmid Tabulaturbuch 1577
           <Chord>
             <BeamMode>begin</BeamMode>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalSharp</subtype>
@@ -4657,8 +4588,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>42</pitch>
               <tpc>20</tpc>
@@ -4676,8 +4605,6 @@ B. Schmid Tabulaturbuch 1577
         <voice>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -4685,8 +4612,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>42</pitch>
               <tpc>20</tpc>
@@ -4695,8 +4620,6 @@ B. Schmid Tabulaturbuch 1577
           <Chord>
             <BeamMode>begin</BeamMode>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalSharp</subtype>
@@ -4707,8 +4630,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -4716,8 +4637,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>45</pitch>
               <tpc>17</tpc>
@@ -4725,8 +4644,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>45</pitch>
               <tpc>17</tpc>
@@ -4734,8 +4651,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalNatural</subtype>
@@ -4756,8 +4671,6 @@ B. Schmid Tabulaturbuch 1577
         <voice>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>42</pitch>
               <tpc>20</tpc>
@@ -4765,8 +4678,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -4775,8 +4686,6 @@ B. Schmid Tabulaturbuch 1577
           <Chord>
             <BeamMode>begin</BeamMode>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -4784,8 +4693,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>37</pitch>
               <tpc>21</tpc>
@@ -4793,8 +4700,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -4802,8 +4707,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -4821,8 +4724,6 @@ B. Schmid Tabulaturbuch 1577
         <voice>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>35</pitch>
               <tpc>19</tpc>
@@ -4830,8 +4731,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>37</pitch>
               <tpc>21</tpc>
@@ -4840,8 +4739,6 @@ B. Schmid Tabulaturbuch 1577
           <Chord>
             <BeamMode>begin</BeamMode>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -4849,8 +4746,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -4858,8 +4753,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>42</pitch>
               <tpc>20</tpc>
@@ -4867,8 +4760,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalSharp</subtype>
@@ -4889,8 +4780,6 @@ B. Schmid Tabulaturbuch 1577
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -4898,8 +4787,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>45</pitch>
               <tpc>17</tpc>
@@ -4907,8 +4794,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>43</pitch>
               <tpc>15</tpc>
@@ -4916,8 +4801,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>42</pitch>
               <tpc>20</tpc>
@@ -4925,8 +4808,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>47</pitch>
               <tpc>19</tpc>
@@ -4934,8 +4815,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>45</pitch>
               <tpc>17</tpc>
@@ -4953,8 +4832,6 @@ B. Schmid Tabulaturbuch 1577
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalSharp</subtype>
@@ -4965,8 +4842,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>45</pitch>
               <tpc>17</tpc>
@@ -4974,8 +4849,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -4983,8 +4856,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -5002,8 +4873,6 @@ B. Schmid Tabulaturbuch 1577
         <voice>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>42</pitch>
               <tpc>20</tpc>
@@ -5011,8 +4880,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalSharp</subtype>
@@ -5023,8 +4890,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>45</pitch>
               <tpc>17</tpc>
@@ -5032,8 +4897,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalSharp</subtype>
@@ -5044,8 +4907,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>42</pitch>
               <tpc>20</tpc>
@@ -5053,8 +4914,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalNatural</subtype>
@@ -5075,8 +4934,6 @@ B. Schmid Tabulaturbuch 1577
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalSharp</subtype>
@@ -5087,8 +4944,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -5096,8 +4951,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>33</pitch>
               <tpc>17</tpc>
@@ -5105,8 +4958,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalNatural</subtype>
@@ -5127,8 +4978,6 @@ B. Schmid Tabulaturbuch 1577
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>37</pitch>
               <tpc>21</tpc>
@@ -5136,8 +4985,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>35</pitch>
               <tpc>19</tpc>
@@ -5145,8 +4992,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>42</pitch>
               <tpc>20</tpc>
@@ -5154,8 +4999,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalSharp</subtype>
@@ -5176,8 +5019,6 @@ B. Schmid Tabulaturbuch 1577
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>47</pitch>
               <tpc>19</tpc>
@@ -5185,8 +5026,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>49</pitch>
               <tpc>21</tpc>
@@ -5194,8 +5033,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>50</pitch>
               <tpc>16</tpc>
@@ -5203,8 +5040,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>42</pitch>
               <tpc>20</tpc>
@@ -5222,8 +5057,6 @@ B. Schmid Tabulaturbuch 1577
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalSharp</subtype>
@@ -5234,8 +5067,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalSharp</subtype>
@@ -5246,8 +5077,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>47</pitch>
               <tpc>19</tpc>
@@ -5255,8 +5084,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>42</pitch>
               <tpc>20</tpc>
@@ -5274,8 +5101,6 @@ B. Schmid Tabulaturbuch 1577
         <voice>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>43</pitch>
               <tpc>15</tpc>
@@ -5283,8 +5108,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>45</pitch>
               <tpc>17</tpc>
@@ -5292,8 +5115,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>47</pitch>
               <tpc>19</tpc>
@@ -5301,8 +5122,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>37</pitch>
               <tpc>21</tpc>
@@ -5310,8 +5129,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -5331,8 +5148,6 @@ B. Schmid Tabulaturbuch 1577
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>45</pitch>
               <tpc>17</tpc>
@@ -5340,8 +5155,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>33</pitch>
               <tpc>17</tpc>
@@ -5349,8 +5162,6 @@ B. Schmid Tabulaturbuch 1577
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
