@@ -10,11 +10,7 @@
       <pageWidth>8.26771</pageWidth>
       <pageHeight>11.6929</pageHeight>
       <pagePrintableWidth>7.48031</pagePrintableWidth>
-      <pageEvenLeftMargin>0.393701</pageEvenLeftMargin>
-      <pageOddLeftMargin>0.393701</pageOddLeftMargin>
-      <pageEvenTopMargin>0.393701</pageEvenTopMargin>
       <pageEvenBottomMargin>0.787403</pageEvenBottomMargin>
-      <pageOddTopMargin>0.393701</pageOddTopMargin>
       <pageOddBottomMargin>0.393701</pageOddBottomMargin>
       <staffUpperBorder>5</staffUpperBorder>
       <staffLowerBorder>5</staffLowerBorder>
@@ -139,7 +135,7 @@
         <bracket type="1" span="3" col="0"/>
         </Staff>
       <trackName>Soprano, Alt</trackName>
-      <Instrument>
+      <Instrument id="voice">
         <trackName>Voice</trackName>
         <minPitchP>36</minPitchP>
         <maxPitchP>94</maxPitchP>
@@ -175,6 +171,7 @@
           <gateTime>100</gateTime>
           </Articulation>
         <Channel>
+          <controller ctrl="32" value="17"/>
           <program value="52"/>
           <controller ctrl="7" value="126"/>
           <controller ctrl="10" value="45"/>
@@ -190,7 +187,7 @@
         <defaultClef>F</defaultClef>
         </Staff>
       <trackName>Voice</trackName>
-      <Instrument>
+      <Instrument id="voice">
         <trackName>Voice</trackName>
         <minPitchP>36</minPitchP>
         <maxPitchP>94</maxPitchP>
@@ -226,6 +223,7 @@
           <gateTime>100</gateTime>
           </Articulation>
         <Channel>
+          <controller ctrl="32" value="17"/>
           <program value="52"/>
           <controller ctrl="7" value="117"/>
           <controller ctrl="10" value="72"/>
@@ -244,7 +242,7 @@
         </Staff>
       <show>0</show>
       <trackName>Contrabass</trackName>
-      <Instrument>
+      <Instrument id="contrabass">
         <longName>Contrabass</longName>
         <shortName>Cb.</shortName>
         <trackName>Contrabass</trackName>
@@ -286,6 +284,7 @@
           <gateTime>100</gateTime>
           </Articulation>
         <Channel>
+          <controller ctrl="32" value="17"/>
           <program value="43"/>
           <controller ctrl="7" value="71"/>
           <controller ctrl="10" value="52"/>
@@ -298,6 +297,7 @@
           <synti>Fluid</synti>
           </Channel>
         <Channel name="tremolo">
+          <controller ctrl="32" value="17"/>
           <program value="44"/>
           <synti>Fluid</synti>
           </Channel>
@@ -325,6 +325,7 @@ Joh. Seb. Bach</text>
           </Text>
         </VBox>
       <Measure len="1/4">
+        <irregular>1</irregular>
         <voice>
           <KeySig>
             <accidental>-3</accidental>
@@ -1088,6 +1089,7 @@ Joh. Seb. Bach</text>
           </voice>
         </Measure>
       <Measure len="1/4">
+        <irregular>1</irregular>
         <voice>
           <Tempo>
             <tempo>1.1666700000000001</tempo>
@@ -4013,8 +4015,6 @@ Joh. Seb. Bach</text>
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>39</pitch>
               <tpc>11</tpc>
@@ -4032,8 +4032,6 @@ Joh. Seb. Bach</text>
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>46</pitch>
               <tpc>12</tpc>
@@ -4041,8 +4039,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>48</pitch>
               <tpc>14</tpc>
@@ -4050,8 +4046,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>43</pitch>
               <tpc>15</tpc>
@@ -4059,8 +4053,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>46</pitch>
               <tpc>12</tpc>
@@ -4078,8 +4070,6 @@ Joh. Seb. Bach</text>
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>44</pitch>
               <tpc>10</tpc>
@@ -4087,8 +4077,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>32</pitch>
               <tpc>10</tpc>
@@ -4096,8 +4084,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>39</pitch>
               <tpc>11</tpc>
@@ -4105,8 +4091,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>36</pitch>
               <tpc>14</tpc>
@@ -4124,8 +4108,6 @@ Joh. Seb. Bach</text>
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>43</pitch>
               <tpc>15</tpc>
@@ -4133,8 +4115,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>44</pitch>
               <tpc>10</tpc>
@@ -4142,8 +4122,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>39</pitch>
               <tpc>11</tpc>
@@ -4151,8 +4129,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -4161,8 +4137,6 @@ Joh. Seb. Bach</text>
           <Chord>
             <BeamMode>begin</BeamMode>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>36</pitch>
               <tpc>14</tpc>
@@ -4170,8 +4144,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>34</pitch>
               <tpc>12</tpc>
@@ -4189,8 +4161,6 @@ Joh. Seb. Bach</text>
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>32</pitch>
               <tpc>10</tpc>
@@ -4198,8 +4168,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>44</pitch>
               <tpc>10</tpc>
@@ -4207,8 +4175,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>43</pitch>
               <tpc>15</tpc>
@@ -4216,8 +4182,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>39</pitch>
               <tpc>11</tpc>
@@ -4235,8 +4199,6 @@ Joh. Seb. Bach</text>
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>44</pitch>
               <tpc>10</tpc>
@@ -4244,8 +4206,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>46</pitch>
               <tpc>12</tpc>
@@ -4253,8 +4213,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>48</pitch>
               <tpc>14</tpc>
@@ -4262,8 +4220,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -4271,8 +4227,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>39</pitch>
               <tpc>11</tpc>
@@ -4299,8 +4253,6 @@ Joh. Seb. Bach</text>
                   </location>
                 </next>
               </Spanner>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>32</pitch>
               <tpc>10</tpc>
@@ -4308,8 +4260,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalNatural</subtype>
@@ -4327,8 +4277,6 @@ Joh. Seb. Bach</text>
                   </location>
                 </prev>
               </Spanner>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>34</pitch>
               <tpc>12</tpc>
@@ -4349,8 +4297,6 @@ Joh. Seb. Bach</text>
           <Chord>
             <dots>1</dots>
             <durationType>half</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>39</pitch>
               <tpc>11</tpc>
@@ -4367,8 +4313,6 @@ Joh. Seb. Bach</text>
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>39</pitch>
               <tpc>11</tpc>
@@ -4386,8 +4330,6 @@ Joh. Seb. Bach</text>
         <voice>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>44</pitch>
               <tpc>10</tpc>
@@ -4395,8 +4337,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>43</pitch>
               <tpc>15</tpc>
@@ -4404,8 +4344,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>41</pitch>
               <tpc>13</tpc>
@@ -4413,8 +4351,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>36</pitch>
               <tpc>14</tpc>
@@ -4423,8 +4359,6 @@ Joh. Seb. Bach</text>
           <Chord>
             <BeamMode>begin</BeamMode>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>48</pitch>
               <tpc>14</tpc>
@@ -4432,8 +4366,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>46</pitch>
               <tpc>12</tpc>
@@ -4451,8 +4383,6 @@ Joh. Seb. Bach</text>
         <voice>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalNatural</subtype>
@@ -4463,8 +4393,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>43</pitch>
               <tpc>15</tpc>
@@ -4472,8 +4400,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>41</pitch>
               <tpc>13</tpc>
@@ -4481,8 +4407,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>46</pitch>
               <tpc>12</tpc>
@@ -4490,8 +4414,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>46</pitch>
               <tpc>12</tpc>
@@ -4499,8 +4421,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalFlat</subtype>
@@ -4521,8 +4441,6 @@ Joh. Seb. Bach</text>
         <voice>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>43</pitch>
               <tpc>15</tpc>
@@ -4530,8 +4448,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>41</pitch>
               <tpc>13</tpc>
@@ -4540,8 +4456,6 @@ Joh. Seb. Bach</text>
           <Chord>
             <BeamMode>begin</BeamMode>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>39</pitch>
               <tpc>11</tpc>
@@ -4549,8 +4463,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -4558,8 +4470,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>39</pitch>
               <tpc>11</tpc>
@@ -4567,8 +4477,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>41</pitch>
               <tpc>13</tpc>
@@ -4586,8 +4494,6 @@ Joh. Seb. Bach</text>
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>43</pitch>
               <tpc>15</tpc>
@@ -4595,8 +4501,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalNatural</subtype>
@@ -4607,8 +4511,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>46</pitch>
               <tpc>12</tpc>
@@ -4616,8 +4518,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>39</pitch>
               <tpc>11</tpc>
@@ -4635,8 +4535,6 @@ Joh. Seb. Bach</text>
         <voice>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>51</pitch>
               <tpc>11</tpc>
@@ -4644,8 +4542,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>50</pitch>
               <tpc>16</tpc>
@@ -4654,8 +4550,6 @@ Joh. Seb. Bach</text>
           <Chord>
             <BeamMode>begin</BeamMode>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>48</pitch>
               <tpc>14</tpc>
@@ -4663,8 +4557,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>46</pitch>
               <tpc>12</tpc>
@@ -4672,8 +4564,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>44</pitch>
               <tpc>10</tpc>
@@ -4681,8 +4571,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>46</pitch>
               <tpc>12</tpc>
@@ -4691,8 +4579,6 @@ Joh. Seb. Bach</text>
           <Chord>
             <BeamMode>begin</BeamMode>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>48</pitch>
               <tpc>14</tpc>
@@ -4700,8 +4586,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>44</pitch>
               <tpc>10</tpc>
@@ -4719,8 +4603,6 @@ Joh. Seb. Bach</text>
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>46</pitch>
               <tpc>12</tpc>
@@ -4728,8 +4610,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>34</pitch>
               <tpc>12</tpc>
@@ -4737,8 +4617,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>39</pitch>
               <tpc>11</tpc>
@@ -4746,8 +4624,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>41</pitch>
               <tpc>13</tpc>
@@ -4765,8 +4641,6 @@ Joh. Seb. Bach</text>
         <voice>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>43</pitch>
               <tpc>15</tpc>
@@ -4774,8 +4648,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalNatural</subtype>
@@ -4787,8 +4659,6 @@ Joh. Seb. Bach</text>
           <Chord>
             <BeamMode>begin</BeamMode>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>46</pitch>
               <tpc>12</tpc>
@@ -4796,8 +4666,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>43</pitch>
               <tpc>15</tpc>
@@ -4805,8 +4673,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>39</pitch>
               <tpc>11</tpc>
@@ -4814,8 +4680,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>41</pitch>
               <tpc>13</tpc>
@@ -4824,8 +4688,6 @@ Joh. Seb. Bach</text>
           <Chord>
             <BeamMode>begin</BeamMode>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>43</pitch>
               <tpc>15</tpc>
@@ -4833,8 +4695,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>39</pitch>
               <tpc>11</tpc>
@@ -4852,8 +4712,6 @@ Joh. Seb. Bach</text>
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>36</pitch>
               <tpc>14</tpc>
@@ -4861,8 +4719,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>41</pitch>
               <tpc>13</tpc>
@@ -4870,8 +4726,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>34</pitch>
               <tpc>12</tpc>
@@ -4879,8 +4733,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>39</pitch>
               <tpc>11</tpc>
@@ -4898,8 +4750,6 @@ Joh. Seb. Bach</text>
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>46</pitch>
               <tpc>12</tpc>
@@ -4907,8 +4757,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>48</pitch>
               <tpc>14</tpc>
@@ -4916,8 +4764,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>43</pitch>
               <tpc>15</tpc>
@@ -4925,8 +4771,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalNatural</subtype>
@@ -4947,8 +4791,6 @@ Joh. Seb. Bach</text>
         <voice>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>41</pitch>
               <tpc>13</tpc>
@@ -4956,8 +4798,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>43</pitch>
               <tpc>15</tpc>
@@ -4965,8 +4805,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>44</pitch>
               <tpc>10</tpc>
@@ -4974,8 +4812,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalNatural</subtype>
@@ -4986,8 +4822,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>36</pitch>
               <tpc>14</tpc>
@@ -5005,8 +4839,6 @@ Joh. Seb. Bach</text>
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalNatural</subtype>
@@ -5024,8 +4856,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>34</pitch>
               <tpc>12</tpc>
@@ -5037,8 +4867,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>39</pitch>
               <tpc>11</tpc>
@@ -5046,8 +4874,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>39</pitch>
               <tpc>11</tpc>
@@ -5065,8 +4891,6 @@ Joh. Seb. Bach</text>
         <voice>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>44</pitch>
               <tpc>10</tpc>
@@ -5074,8 +4898,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>46</pitch>
               <tpc>12</tpc>
@@ -5083,8 +4905,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>48</pitch>
               <tpc>14</tpc>
@@ -5092,8 +4912,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -5101,8 +4919,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>39</pitch>
               <tpc>11</tpc>
@@ -5120,8 +4936,6 @@ Joh. Seb. Bach</text>
         <voice>
           <Chord>
             <durationType>half</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalNatural</subtype>
@@ -5132,8 +4946,6 @@ Joh. Seb. Bach</text>
             </Chord>
           <Chord>
             <durationType>half</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>34</pitch>
               <tpc>12</tpc>
@@ -5154,8 +4966,6 @@ Joh. Seb. Bach</text>
           <Chord>
             <dots>1</dots>
             <durationType>half</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>27</pitch>
               <tpc>11</tpc>
