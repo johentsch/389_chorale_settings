@@ -41,11 +41,7 @@
       <pageWidth>8.27007</pageWidth>
       <pageHeight>11.6901</pageHeight>
       <pagePrintableWidth>7.48267</pagePrintableWidth>
-      <pageEvenLeftMargin>0.393701</pageEvenLeftMargin>
-      <pageOddLeftMargin>0.393701</pageOddLeftMargin>
-      <pageEvenTopMargin>0.393701</pageEvenTopMargin>
       <pageEvenBottomMargin>0.787403</pageEvenBottomMargin>
-      <pageOddTopMargin>0.393701</pageOddTopMargin>
       <pageOddBottomMargin>0.787403</pageOddBottomMargin>
       <minSystemDistance>12.5</minSystemDistance>
       <maxSystemDistance>18</maxSystemDistance>
@@ -257,7 +253,7 @@
         <bracket type="1" span="2" col="0"/>
         </Staff>
       <trackName>Soprano/Alto</trackName>
-      <Instrument>
+      <Instrument id="voice">
         <trackName>Soprano/Alto</trackName>
         <minPitchP>55</minPitchP>
         <maxPitchP>84</maxPitchP>
@@ -293,6 +289,7 @@
           <gateTime>100</gateTime>
           </Articulation>
         <Channel>
+          <controller ctrl="32" value="17"/>
           <program value="52"/>
           <controller ctrl="7" value="124"/>
           <controller ctrl="10" value="45"/>
@@ -310,7 +307,7 @@
         <defaultClef>F</defaultClef>
         </Staff>
       <trackName>Tenor/Bass</trackName>
-      <Instrument>
+      <Instrument id="voice">
         <trackName>Tenor/Bass</trackName>
         <minPitchP>38</minPitchP>
         <maxPitchP>69</maxPitchP>
@@ -347,6 +344,7 @@
           <gateTime>100</gateTime>
           </Articulation>
         <Channel>
+          <controller ctrl="32" value="17"/>
           <program value="52"/>
           <controller ctrl="7" value="118"/>
           <controller ctrl="10" value="77"/>
@@ -366,7 +364,7 @@
         </Staff>
       <show>0</show>
       <trackName>Contrabass</trackName>
-      <Instrument>
+      <Instrument id="contrabass">
         <longName>Contrabass</longName>
         <shortName>Cb.</shortName>
         <trackName>Contrabass</trackName>
@@ -408,6 +406,7 @@
           <gateTime>100</gateTime>
           </Articulation>
         <Channel>
+          <controller ctrl="32" value="17"/>
           <program value="43"/>
           <controller ctrl="7" value="77"/>
           <controller ctrl="10" value="49"/>
@@ -420,6 +419,7 @@
           <synti>Fluid</synti>
           </Channel>
         <Channel name="tremolo">
+          <controller ctrl="32" value="17"/>
           <program value="44"/>
           <synti>Fluid</synti>
           </Channel>
@@ -1197,10 +1197,7 @@ Daniel Vetter vor 1695
         </Measure>
       <Measure len="2/4">
         <endRepeat>2</endRepeat>
-        <MeasureNumber>
-          <offset x="-0.75127" y="-0.420913"/>
-          <text>6</text>
-          </MeasureNumber>
+        <irregular>1</irregular>
         <voice>
           <Spanner type="Volta">
             <Volta>
@@ -1241,10 +1238,7 @@ Daniel Vetter vor 1695
           </voice>
         </Measure>
       <Measure len="2/4">
-        <MeasureNumber>
-          <offset x="-1.4269" y="-0.420913"/>
-          <text>7</text>
-          </MeasureNumber>
+        <irregular>1</irregular>
         <voice>
           <Spanner type="Volta">
             <prev>
@@ -1296,7 +1290,7 @@ Daniel Vetter vor 1695
       <Measure>
         <MeasureNumber>
           <offset x="0.375635" y="-0.420913"/>
-          <text>8</text>
+          <text>6</text>
           </MeasureNumber>
         <LayoutBreak>
           <subtype>line</subtype>
@@ -1413,7 +1407,7 @@ Daniel Vetter vor 1695
       <Measure>
         <MeasureNumber>
           <offset x="0" y="-1.36"/>
-          <text>9</text>
+          <text>7</text>
           </MeasureNumber>
         <voice>
           <Chord>
@@ -1523,7 +1517,7 @@ Daniel Vetter vor 1695
       <Measure>
         <MeasureNumber>
           <offset x="0" y="-1.36"/>
-          <text>10</text>
+          <text>8</text>
           </MeasureNumber>
         <voice>
           <Rest>
@@ -1620,7 +1614,7 @@ Daniel Vetter vor 1695
       <Measure>
         <MeasureNumber>
           <offset x="0" y="-1.36"/>
-          <text>11</text>
+          <text>9</text>
           </MeasureNumber>
         <voice>
           <Chord>
@@ -1715,7 +1709,7 @@ Daniel Vetter vor 1695
       <Measure>
         <MeasureNumber>
           <offset x="0" y="-1.36"/>
-          <text>12</text>
+          <text>10</text>
           </MeasureNumber>
         <LayoutBreak>
           <subtype>line</subtype>
@@ -1807,7 +1801,7 @@ Daniel Vetter vor 1695
       <Measure>
         <MeasureNumber>
           <offset x="0" y="-1.36"/>
-          <text>13</text>
+          <text>11</text>
           </MeasureNumber>
         <voice>
           <Chord>
@@ -1925,7 +1919,7 @@ Daniel Vetter vor 1695
       <Measure>
         <MeasureNumber>
           <offset x="0" y="-1.36"/>
-          <text>14</text>
+          <text>12</text>
           </MeasureNumber>
         <voice>
           <Chord>
@@ -2060,7 +2054,7 @@ Daniel Vetter vor 1695
       <Measure>
         <MeasureNumber>
           <offset x="0" y="-1.36"/>
-          <text>15</text>
+          <text>13</text>
           </MeasureNumber>
         <voice>
           <Chord>
@@ -2218,7 +2212,7 @@ Daniel Vetter vor 1695
       <Measure>
         <MeasureNumber>
           <offset x="0" y="-1.36"/>
-          <text>16</text>
+          <text>14</text>
           </MeasureNumber>
         <voice>
           <Chord>
@@ -2393,7 +2387,7 @@ Daniel Vetter vor 1695
       <Measure>
         <MeasureNumber>
           <offset x="0" y="-1.36"/>
-          <text>17</text>
+          <text>15</text>
           </MeasureNumber>
         <LayoutBreak>
           <subtype>line</subtype>
@@ -4084,8 +4078,6 @@ Daniel Vetter vor 1695
             </Rest>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -4094,8 +4086,6 @@ Daniel Vetter vor 1695
           <Chord>
             <BeamMode>begin</BeamMode>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -4139,8 +4129,6 @@ Daniel Vetter vor 1695
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>45</pitch>
               <tpc>17</tpc>
@@ -4148,8 +4136,6 @@ Daniel Vetter vor 1695
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -4157,8 +4143,6 @@ Daniel Vetter vor 1695
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>42</pitch>
               <tpc>20</tpc>
@@ -4166,8 +4150,6 @@ Daniel Vetter vor 1695
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>39</pitch>
               <tpc>23</tpc>
@@ -4185,8 +4167,6 @@ Daniel Vetter vor 1695
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -4289,8 +4269,6 @@ Daniel Vetter vor 1695
                   </location>
                 </next>
               </Spanner>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -4317,8 +4295,6 @@ Daniel Vetter vor 1695
                   </location>
                 </prev>
               </Spanner>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -4327,8 +4303,6 @@ Daniel Vetter vor 1695
           <Chord>
             <BeamMode>begin</BeamMode>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>39</pitch>
               <tpc>23</tpc>
@@ -4348,8 +4322,6 @@ Daniel Vetter vor 1695
               <offset x="-0.216293" y="6.4615"/>
               <text>wohl</text>
               </Lyrics>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>37</pitch>
               <tpc>21</tpc>
@@ -4368,8 +4340,6 @@ Daniel Vetter vor 1695
               <offset x="-0.216293" y="6.4615"/>
               <text>ge</text>
               </Lyrics>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>35</pitch>
               <tpc>19</tpc>
@@ -4430,8 +4400,6 @@ Daniel Vetter vor 1695
               <offset x="0.960416" y="6.4615"/>
               <text>fass</text>
               </Lyrics>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>42</pitch>
               <tpc>20</tpc>
@@ -4439,8 +4407,6 @@ Daniel Vetter vor 1695
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -4482,8 +4448,6 @@ Daniel Vetter vor 1695
               <offset x="-0.177621" y="3.68571"/>
               <text>gut</text>
               </Lyrics>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>35</pitch>
               <tpc>19</tpc>
@@ -4554,8 +4518,6 @@ Daniel Vetter vor 1695
             <Lyrics>
               <text>Hilf,</text>
               </Lyrics>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>37</pitch>
               <tpc>21</tpc>
@@ -4567,8 +4529,6 @@ Daniel Vetter vor 1695
             <Lyrics>
               <text>dass</text>
               </Lyrics>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>39</pitch>
               <tpc>23</tpc>
@@ -4632,8 +4592,6 @@ Daniel Vetter vor 1695
               <offset x="-0.216293" y="3.68571"/>
               <text>ich</text>
               </Lyrics>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -4646,8 +4604,6 @@ Daniel Vetter vor 1695
               <offset x="-0.216293" y="3.68571"/>
               <text>ein</text>
               </Lyrics>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>39</pitch>
               <tpc>23</tpc>
@@ -4661,8 +4617,6 @@ Daniel Vetter vor 1695
               <offset x="-0.216293" y="3.68571"/>
               <text>ehr</text>
               </Lyrics>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -4676,8 +4630,6 @@ Daniel Vetter vor 1695
               <offset x="-0.216293" y="3.68571"/>
               <text>lich</text>
               </Lyrics>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>42</pitch>
               <tpc>20</tpc>
@@ -4689,8 +4641,6 @@ Daniel Vetter vor 1695
               <offset x="-0.216293" y="3.68571"/>
               <text>Grab</text>
               </Lyrics>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>32</pitch>
               <tpc>22</tpc>
@@ -4703,8 +4653,6 @@ Daniel Vetter vor 1695
               <offset x="-0.216293" y="3.68571"/>
               <text>ne</text>
               </Lyrics>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>44</pitch>
               <tpc>22</tpc>
@@ -4718,8 +4666,6 @@ Daniel Vetter vor 1695
               <offset x="-0.216293" y="3.68571"/>
               <text>ben</text>
               </Lyrics>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>42</pitch>
               <tpc>20</tpc>
@@ -4743,8 +4689,6 @@ Daniel Vetter vor 1695
               <offset x="-0.177621" y="3.68571"/>
               <text>from</text>
               </Lyrics>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -4759,8 +4703,6 @@ Daniel Vetter vor 1695
               <offset x="1.19666" y="3.68571"/>
               <text>men</text>
               </Lyrics>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>39</pitch>
               <tpc>23</tpc>
@@ -4768,8 +4710,6 @@ Daniel Vetter vor 1695
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -4787,8 +4727,6 @@ Daniel Vetter vor 1695
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>42</pitch>
               <tpc>20</tpc>
@@ -4796,8 +4734,6 @@ Daniel Vetter vor 1695
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>30</pitch>
               <tpc>20</tpc>
@@ -4819,8 +4755,6 @@ Daniel Vetter vor 1695
             <small>1</small>
             <dots>1</dots>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <StemDirection>down</StemDirection>
             <Note>
               <color r="164" g="0" b="0" a="255"/>
@@ -4831,8 +4765,6 @@ Daniel Vetter vor 1695
           <Chord>
             <small>1</small>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <StemDirection>down</StemDirection>
             <Note>
               <color r="164" g="0" b="0" a="255"/>
@@ -4859,8 +4791,6 @@ Daniel Vetter vor 1695
               <offset x="-1.15538" y="3.68571"/>
               <text>und</text>
               </Lyrics>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>35</pitch>
               <tpc>19</tpc>
@@ -4873,8 +4803,6 @@ Daniel Vetter vor 1695
               <offset x="-0.216293" y="3.68571"/>
               <text>auch</text>
               </Lyrics>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>35</pitch>
               <tpc>19</tpc>
@@ -4887,8 +4815,6 @@ Daniel Vetter vor 1695
               <offset x="1.5601" y="3.68571"/>
               <text>end</text>
               </Lyrics>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -4896,8 +4822,6 @@ Daniel Vetter vor 1695
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>39</pitch>
               <tpc>23</tpc>
@@ -4911,8 +4835,6 @@ Daniel Vetter vor 1695
               <offset x="-0.216293" y="3.68571"/>
               <text>lich</text>
               </Lyrics>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>37</pitch>
               <tpc>21</tpc>
@@ -4920,8 +4842,6 @@ Daniel Vetter vor 1695
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>35</pitch>
               <tpc>19</tpc>
@@ -4933,8 +4853,6 @@ Daniel Vetter vor 1695
             <offset x="-1.07143" y="0"/>
             <small>1</small>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <StemDirection>down</StemDirection>
             <Note>
               <color r="164" g="0" b="0" a="255"/>
@@ -4958,8 +4876,6 @@ Daniel Vetter vor 1695
               <offset x="-0.216293" y="4.18571"/>
               <text>in</text>
               </Lyrics>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>33</pitch>
               <tpc>17</tpc>
@@ -4967,8 +4883,6 @@ Daniel Vetter vor 1695
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>32</pitch>
               <tpc>22</tpc>
@@ -4980,8 +4894,6 @@ Daniel Vetter vor 1695
               <offset x="-0.216293" y="4.18571"/>
               <text>der</text>
               </Lyrics>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalDoubleSharp</subtype>
@@ -4997,8 +4909,6 @@ Daniel Vetter vor 1695
               <offset x="-0.177621" y="4.18571"/>
               <text>Er</text>
               </Lyrics>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>32</pitch>
               <tpc>22</tpc>
@@ -5021,8 +4931,6 @@ Daniel Vetter vor 1695
               <offset x="-0.177621" y="4.18571"/>
               <text>de</text>
               </Lyrics>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>37</pitch>
               <tpc>21</tpc>
@@ -5038,8 +4946,6 @@ Daniel Vetter vor 1695
               <offset x="-0.216293" y="4.18571"/>
               <text>nim</text>
               </Lyrics>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>49</pitch>
               <tpc>21</tpc>
@@ -5053,8 +4959,6 @@ Daniel Vetter vor 1695
               <offset x="-0.216293" y="4.18571"/>
               <text>mer</text>
               </Lyrics>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>44</pitch>
               <tpc>22</tpc>
@@ -5077,8 +4981,6 @@ Daniel Vetter vor 1695
               <offset x="-0.216293" y="4.18571"/>
               <text>mehr</text>
               </Lyrics>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>45</pitch>
               <tpc>17</tpc>
@@ -5086,8 +4988,6 @@ Daniel Vetter vor 1695
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>47</pitch>
               <tpc>19</tpc>
@@ -5099,8 +4999,6 @@ Daniel Vetter vor 1695
               <offset x="-0.216293" y="4.18571"/>
               <text>zu</text>
               </Lyrics>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>49</pitch>
               <tpc>21</tpc>
@@ -5118,8 +5016,6 @@ Daniel Vetter vor 1695
                   </location>
                 </next>
               </Spanner>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>44</pitch>
               <tpc>22</tpc>
@@ -5127,8 +5023,6 @@ Daniel Vetter vor 1695
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>39</pitch>
               <tpc>23</tpc>
@@ -5146,8 +5040,6 @@ Daniel Vetter vor 1695
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -5163,8 +5055,6 @@ Daniel Vetter vor 1695
                   </location>
                 </prev>
               </Spanner>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>33</pitch>
               <tpc>17</tpc>
@@ -5172,8 +5062,6 @@ Daniel Vetter vor 1695
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalSharp</subtype>
@@ -5194,8 +5082,6 @@ Daniel Vetter vor 1695
         <voice>
           <Chord>
             <durationType>half</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>35</pitch>
               <tpc>19</tpc>
