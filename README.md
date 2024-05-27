@@ -1,10 +1,11 @@
-![Version](https://img.shields.io/github/v/release/DCMLab/389_chorale_settings?display_name=tag)
-[![DOI](https://zenodo.org/badge/{{ zenodo_badge_id }}.svg)](https://zenodo.org/badge/latestdoi/{{ zenodo_badge_id }})
-![GitHub repo size](https://img.shields.io/github/repo-size/DCMLab/389_chorale_settings)
+![Version](https://img.shields.io/github/v/release/johentsch/389_chorale_settings?display_name=tag)
+[![DOI](https://zenodo.org/badge/805086079.svg)](https://zenodo.org/badge/latestdoi/805086079)
+![GitHub repo size](https://img.shields.io/github/repo-size/johentsch/389_chorale_settings)
 ![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-9cf)
 
 
-# J.S. Bach - 389 Chorale Settings (Choralgesänge)
+# A digital edition of the 389 Chorale Settings (Choralgesänge) by J.S. Bach
+
 
 This repository has been made possible by Gertim Alberda, 
 who ‘manually’ digitalized all the 389 Bach 4-voice chorales, 
@@ -36,23 +37,24 @@ The "mother of all datasets" is available as two versions, each contained in a s
 * `original_complete`: Gertim Alberda's original MuseScore files converted to uncompressed 
   MuseScore 3 format (`.mscx`)
 
-## Cite as
-
-```
-Alberda, G. & Hentschel, J. (2024). A digital edition of the 389 Chorale Settings by J.S. Bach.
-```
-
 ## Version history
 
-See the [GitHub releases](https://github.com/DCMLab/389_chorale_settings/releases).
+See the [GitHub releases](https://github.com/johentsch/389_chorale_settings/releases).
 
 ## Questions, Suggestions, Corrections, Bug Reports
 
-Please [create an issue](https://github.com/DCMLab/389_chorale_settings/issues) and/or feel free to fork and submit pull requests.
+Please [create an issue](https://github.com/johentsch/389_chorale_settings/issues) and/or feel free to fork and submit pull requests.
 
 ## License
 
 Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License ([CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)).
+
+## Cite as
+
+```
+Alberda, G. & Hentschel, J. (2024). A digital edition of the 389 Chorale Settings (Choralgesänge) by J.S. Bach (v1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.11358762
+```
+
 
 ## File naming convention
 
