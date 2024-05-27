@@ -1,0 +1,59 @@
+INCOMPLETE_MC_WRONGLY_COMPLETED_WARNING (3, 13) ms3.Parse.original_complete.B015
+	None of the MCs following the irregular MC 13 complete it.
+	Both Breitkopf 1784-87 and Breitkopf 1898 have an irregular measure m. 11 of length 2/4.
+
+COMPETING_MEASURE_INFO_WARNING (9, 'mc', 1, 'voice/KeySig/accidental') ms3.Parse.original_complete.B027
+	mc 1: The values ['2' '3'] in 'voice/KeySig/accidental' of 'staff' [2, 5] are lost.
+
+INCOMPLETE_MC_WRONGLY_COMPLETED_WARNING (3, 22) ms3.Parse.original_complete.B036
+	None of the MCs following the irregular MC 22 complete it.
+	This follows the print which has two double barlines; the third section begins with an anacrusis.
+
+INCOMPLETE_MC_WRONGLY_COMPLETED_WARNING (3, 5) ms3.Parse.original_complete.B038
+	Some of the MCs following the irregular MC 5 do, some don't complete it.
+	This should be notated with a first and second ending in m. 4, where 4b ends on a half note.
+
+INCOMPLETE_MC_WRONGLY_COMPLETED_WARNING (3, 9) ms3.Parse.original_complete.B077
+	None of the MCs following the irregular MC 9 complete it.
+	This is because of the change from 4/4 to 3/4 meter
+
+VOLTAS_WITH_DIFFERING_LENGTHS_WARNING (4, 7) ms3.Parse.original_complete.B177
+	Volta group of MC 7 contains voltas with different lengths.
+	First ending represents the first half of 1b. Second ending represents beat 4 of 4b.
+
+COMPETING_MEASURE_INFO_WARNING (9, 'mc', 1, 'voice/TimeSig/linkedMain') ms3.Parse.original_complete.B185
+COMPETING_MEASURE_INFO_WARNING (9, 'mc', 12, 'voice/BarLine/linkedMain') ms3.Parse.original_complete.B185
+
+COMPETING_MEASURE_INFO_WARNING (9, 'mc', 1, 'voice/KeySig/linkedMain') ms3.Parse.original_complete.B195
+COMPETING_MEASURE_INFO_WARNING (9, 'mc', 1, 'voice/TimeSig/linkedMain') ms3.Parse.original_complete.B195
+COMPETING_MEASURE_INFO_WARNING (9, 'mc', 13, 'voice/BarLine/linkedMain') ms3.Parse.original_complete.B195
+
+COMPETING_MEASURE_INFO_WARNING (9, 'mc', 14, 'voice/BarLine/subtype') ms3.Parse.original_complete.B205
+COMPETING_MEASURE_INFO_WARNING (9, 'mc', 24, 'voice/BarLine/linkedMain') ms3.Parse.original_complete.B205
+COMPETING_MEASURE_INFO_WARNING (9, 'mc', 24, 'voice/BarLine/subtype') ms3.Parse.original_complete.B205
+
+INCOMPLETE_MC_WRONGLY_COMPLETED_WARNING (3, 3) ms3.Parse.original_complete.B226
+	Some of the MCs following the irregular MC 3 do, some don't complete it.
+	To fully disambiguate, m. 3 would have to be written with a first ending containing a full note.
+
+INCOMPLETE_MC_WRONGLY_COMPLETED_WARNING (3, 8) ms3.Parse.original_complete.B229
+INCOMPLETE_MC_WRONGLY_COMPLETED_WARNING (3, 16) ms3.Parse.original_complete.B229
+	None of the MCs following the irregular MCs 8 and 16 complete it because these finalis measures in 3/2
+	are notated as whole notes without dots.
+
+COMPETING_MEASURE_INFO_WARNING (9, 'mc', 1, 'voice/KeySig/linkedMain') ms3.Parse.original_complete.B272
+COMPETING_MEASURE_INFO_WARNING (9, 'mc', 1, 'voice/KeySig/accidental') ms3.Parse.original_complete.B272
+	mc 1: The missing value in 'voice/KeySig/accidental' was filled with '2', present in 'staff' [5].
+
+
+COMPETING_MEASURE_INFO_WARNING (9, 'mc', 1, 'voice/KeySig/accidental') ms3.Parse.original_complete.B279
+	mc 1: The values ['1' '2'] in 'voice/KeySig/accidental' of 'staff' [2, 9] are lost.
+
+MCS_NOT_EXCLUDED_FROM_BARCOUNT_WARNING (1, 2) ms3.Parse.original_complete.B380
+	MC 2 seems to be offset from the MN's beginning but has not been excluded from barcount.
+INCOMPLETE_MC_WRONGLY_COMPLETED_WARNING (3, 3) ms3.Parse.original_complete.B380
+	None of the MCs following the irregular MC 3 complete it.
+	This is a bug in ms3 v2.5.1 that has been reported as https://github.com/johentsch/ms3/issues/114
+
+COMPETING_MEASURE_INFO_WARNING (9, 'mc', 1, 'voice/KeySig/accidental') ms3.Parse.original_complete.B378
+	mc 1: The missing value in 'voice/KeySig/accidental' was filled with '-1', present in 'staff' [3].

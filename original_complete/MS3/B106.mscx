@@ -10,11 +10,7 @@
       <pageWidth>8.27007</pageWidth>
       <pageHeight>11.6901</pageHeight>
       <pagePrintableWidth>7.48267</pagePrintableWidth>
-      <pageEvenLeftMargin>0.393701</pageEvenLeftMargin>
-      <pageOddLeftMargin>0.393701</pageOddLeftMargin>
-      <pageEvenTopMargin>0.393701</pageEvenTopMargin>
       <pageEvenBottomMargin>0.787403</pageEvenBottomMargin>
-      <pageOddTopMargin>0.393701</pageOddTopMargin>
       <pageOddBottomMargin>0.787403</pageOddBottomMargin>
       <akkoladeDistance>6.3</akkoladeDistance>
       <maxSystemDistance>10</maxSystemDistance>
@@ -224,7 +220,7 @@
         <bracket type="1" span="4" col="0"/>
         </Staff>
       <trackName>Soprano/Alto</trackName>
-      <Instrument>
+      <Instrument id="voice">
         <trackName>Soprano/Alto</trackName>
         <minPitchP>55</minPitchP>
         <maxPitchP>84</maxPitchP>
@@ -260,6 +256,7 @@
           <gateTime>100</gateTime>
           </Articulation>
         <Channel>
+          <controller ctrl="32" value="17"/>
           <program value="52"/>
           <controller ctrl="7" value="105"/>
           <controller ctrl="10" value="56"/>
@@ -276,7 +273,7 @@
         </Staff>
       <show>0</show>
       <trackName>Voice</trackName>
-      <Instrument>
+      <Instrument id="voice">
         <longName>Voice</longName>
         <shortName>Vo.</shortName>
         <trackName>Voice</trackName>
@@ -314,6 +311,7 @@
           <gateTime>100</gateTime>
           </Articulation>
         <Channel>
+          <controller ctrl="32" value="17"/>
           <program value="52"/>
           <controller ctrl="7" value="105"/>
           <controller ctrl="10" value="56"/>
@@ -330,7 +328,7 @@
         <defaultClef>F</defaultClef>
         </Staff>
       <trackName>Tenor/Bass</trackName>
-      <Instrument>
+      <Instrument id="voice">
         <trackName>Tenor/Bass</trackName>
         <minPitchP>38</minPitchP>
         <maxPitchP>69</maxPitchP>
@@ -367,6 +365,7 @@
           <gateTime>100</gateTime>
           </Articulation>
         <Channel>
+          <controller ctrl="32" value="17"/>
           <program value="52"/>
           <controller ctrl="10" value="69"/>
           <controller ctrl="91" value="18"/>
@@ -384,7 +383,7 @@
         </Staff>
       <show>0</show>
       <trackName>Contrabass</trackName>
-      <Instrument>
+      <Instrument id="contrabass">
         <longName>Contrabass</longName>
         <shortName>Cb.</shortName>
         <trackName>Contrabass</trackName>
@@ -426,6 +425,7 @@
           <gateTime>100</gateTime>
           </Articulation>
         <Channel>
+          <controller ctrl="32" value="17"/>
           <program value="43"/>
           <controller ctrl="7" value="53"/>
           <controller ctrl="10" value="56"/>
@@ -438,6 +438,7 @@
           <synti>Fluid</synti>
           </Channel>
         <Channel name="tremolo">
+          <controller ctrl="32" value="17"/>
           <program value="44"/>
           <synti>Fluid</synti>
           </Channel>
@@ -1055,6 +1056,7 @@ Casp. Peltsch 1648</text>
           </voice>
         </Measure>
       <Measure len="1/4">
+        <irregular>1</irregular>
         <voice>
           <Tempo>
             <tempo>1.25</tempo>
@@ -1851,8 +1853,6 @@ Casp. Peltsch 1648</text>
         <voice>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>60</pitch>
               <tpc>14</tpc>
@@ -1860,8 +1860,6 @@ Casp. Peltsch 1648</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>69</pitch>
               <tpc>17</tpc>
@@ -3106,8 +3104,6 @@ Casp. Peltsch 1648</text>
         <voice>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>31</pitch>
               <tpc>15</tpc>
@@ -3115,8 +3111,6 @@ Casp. Peltsch 1648</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>33</pitch>
               <tpc>17</tpc>
@@ -3134,8 +3128,6 @@ Casp. Peltsch 1648</text>
         <voice>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>34</pitch>
               <tpc>12</tpc>
@@ -3143,8 +3135,6 @@ Casp. Peltsch 1648</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>36</pitch>
               <tpc>14</tpc>
@@ -3153,8 +3143,6 @@ Casp. Peltsch 1648</text>
           <Chord>
             <BeamMode>begin</BeamMode>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -3162,8 +3150,6 @@ Casp. Peltsch 1648</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalNatural</subtype>
@@ -3174,8 +3160,6 @@ Casp. Peltsch 1648</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalSharp</subtype>
@@ -3186,8 +3170,6 @@ Casp. Peltsch 1648</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>43</pitch>
               <tpc>15</tpc>
@@ -3196,8 +3178,6 @@ Casp. Peltsch 1648</text>
           <Chord>
             <BeamMode>begin</BeamMode>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>45</pitch>
               <tpc>17</tpc>
@@ -3205,8 +3185,6 @@ Casp. Peltsch 1648</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -3233,8 +3211,6 @@ Casp. Peltsch 1648</text>
                   </location>
                 </next>
               </Spanner>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>43</pitch>
               <tpc>15</tpc>
@@ -3242,8 +3218,6 @@ Casp. Peltsch 1648</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>45</pitch>
               <tpc>17</tpc>
@@ -3251,8 +3225,6 @@ Casp. Peltsch 1648</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>46</pitch>
               <tpc>12</tpc>
@@ -3267,8 +3239,6 @@ Casp. Peltsch 1648</text>
                   </location>
                 </prev>
               </Spanner>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>48</pitch>
               <tpc>14</tpc>
@@ -3276,8 +3246,6 @@ Casp. Peltsch 1648</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>50</pitch>
               <tpc>16</tpc>
@@ -3285,8 +3253,6 @@ Casp. Peltsch 1648</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>46</pitch>
               <tpc>12</tpc>
@@ -3294,8 +3260,6 @@ Casp. Peltsch 1648</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>45</pitch>
               <tpc>17</tpc>
@@ -3313,8 +3277,6 @@ Casp. Peltsch 1648</text>
         <voice>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>43</pitch>
               <tpc>15</tpc>
@@ -3322,8 +3284,6 @@ Casp. Peltsch 1648</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>41</pitch>
               <tpc>13</tpc>
@@ -3332,8 +3292,6 @@ Casp. Peltsch 1648</text>
           <Chord>
             <BeamMode>begin</BeamMode>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>39</pitch>
               <tpc>11</tpc>
@@ -3341,8 +3299,6 @@ Casp. Peltsch 1648</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -3350,8 +3306,6 @@ Casp. Peltsch 1648</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>36</pitch>
               <tpc>14</tpc>
@@ -3359,8 +3313,6 @@ Casp. Peltsch 1648</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>41</pitch>
               <tpc>13</tpc>
@@ -3369,8 +3321,6 @@ Casp. Peltsch 1648</text>
           <Chord>
             <BeamMode>begin</BeamMode>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>34</pitch>
               <tpc>12</tpc>
@@ -3378,8 +3328,6 @@ Casp. Peltsch 1648</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -3408,8 +3356,6 @@ Casp. Peltsch 1648</text>
                   </location>
                 </next>
               </Spanner>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>39</pitch>
               <tpc>11</tpc>
@@ -3417,8 +3363,6 @@ Casp. Peltsch 1648</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>36</pitch>
               <tpc>14</tpc>
@@ -3433,8 +3377,6 @@ Casp. Peltsch 1648</text>
                   </location>
                 </prev>
               </Spanner>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>41</pitch>
               <tpc>13</tpc>
@@ -3442,8 +3384,6 @@ Casp. Peltsch 1648</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>34</pitch>
               <tpc>12</tpc>
@@ -3460,8 +3400,6 @@ Casp. Peltsch 1648</text>
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>34</pitch>
               <tpc>12</tpc>
@@ -3480,8 +3418,6 @@ Casp. Peltsch 1648</text>
           <Chord>
             <dots>1</dots>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>36</pitch>
               <tpc>14</tpc>
@@ -3489,8 +3425,6 @@ Casp. Peltsch 1648</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalSharp</subtype>
@@ -3501,8 +3435,6 @@ Casp. Peltsch 1648</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -3510,8 +3442,6 @@ Casp. Peltsch 1648</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>39</pitch>
               <tpc>11</tpc>
@@ -3519,8 +3449,6 @@ Casp. Peltsch 1648</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalNatural</subtype>
@@ -3541,8 +3469,6 @@ Casp. Peltsch 1648</text>
         <voice>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>41</pitch>
               <tpc>13</tpc>
@@ -3550,8 +3476,6 @@ Casp. Peltsch 1648</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalSharp</subtype>
@@ -3563,8 +3487,6 @@ Casp. Peltsch 1648</text>
           <Chord>
             <BeamMode>begin</BeamMode>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>43</pitch>
               <tpc>15</tpc>
@@ -3572,8 +3494,6 @@ Casp. Peltsch 1648</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalSharp</subtype>
@@ -3584,8 +3504,6 @@ Casp. Peltsch 1648</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -3593,8 +3511,6 @@ Casp. Peltsch 1648</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>42</pitch>
               <tpc>20</tpc>
@@ -3612,8 +3528,6 @@ Casp. Peltsch 1648</text>
         <voice>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>43</pitch>
               <tpc>15</tpc>
@@ -3621,8 +3535,6 @@ Casp. Peltsch 1648</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>41</pitch>
               <tpc>13</tpc>
@@ -3631,8 +3543,6 @@ Casp. Peltsch 1648</text>
           <Chord>
             <BeamMode>begin</BeamMode>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>39</pitch>
               <tpc>11</tpc>
@@ -3640,8 +3550,6 @@ Casp. Peltsch 1648</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -3650,8 +3558,6 @@ Casp. Peltsch 1648</text>
           <Chord>
             <dots>1</dots>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>36</pitch>
               <tpc>14</tpc>
@@ -3659,8 +3565,6 @@ Casp. Peltsch 1648</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalNatural</subtype>
@@ -3681,8 +3585,6 @@ Casp. Peltsch 1648</text>
         <voice>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>36</pitch>
               <tpc>14</tpc>
@@ -3695,8 +3597,6 @@ Casp. Peltsch 1648</text>
             </Fermata>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>48</pitch>
               <tpc>14</tpc>
@@ -3704,8 +3604,6 @@ Casp. Peltsch 1648</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>46</pitch>
               <tpc>12</tpc>
@@ -3713,8 +3611,6 @@ Casp. Peltsch 1648</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>45</pitch>
               <tpc>17</tpc>
@@ -3722,8 +3618,6 @@ Casp. Peltsch 1648</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>43</pitch>
               <tpc>15</tpc>
@@ -3732,8 +3626,6 @@ Casp. Peltsch 1648</text>
           <Chord>
             <BeamMode>begin</BeamMode>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalSharp</subtype>
@@ -3744,8 +3636,6 @@ Casp. Peltsch 1648</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>45</pitch>
               <tpc>17</tpc>
@@ -3765,8 +3655,6 @@ Casp. Peltsch 1648</text>
         <voice>
           <Chord>
             <durationType>half</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -3774,8 +3662,6 @@ Casp. Peltsch 1648</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>43</pitch>
               <tpc>15</tpc>
