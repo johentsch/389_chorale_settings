@@ -41,11 +41,7 @@
       <pageWidth>8.27007</pageWidth>
       <pageHeight>11.6901</pageHeight>
       <pagePrintableWidth>7.48267</pagePrintableWidth>
-      <pageEvenLeftMargin>0.393701</pageEvenLeftMargin>
-      <pageOddLeftMargin>0.393701</pageOddLeftMargin>
-      <pageEvenTopMargin>0.393701</pageEvenTopMargin>
       <pageEvenBottomMargin>0.787403</pageEvenBottomMargin>
-      <pageOddTopMargin>0.393701</pageOddTopMargin>
       <pageOddBottomMargin>0.787403</pageOddBottomMargin>
       <akkoladeDistance>6.3</akkoladeDistance>
       <maxSystemDistance>11</maxSystemDistance>
@@ -256,7 +252,7 @@
           </StaffType>
         </Staff>
       <trackName>Violin</trackName>
-      <Instrument>
+      <Instrument id="violin">
         <trackName>Violin</trackName>
         <minPitchP>55</minPitchP>
         <maxPitchP>103</maxPitchP>
@@ -292,6 +288,7 @@
           <gateTime>100</gateTime>
           </Articulation>
         <Channel>
+          <controller ctrl="32" value="17"/>
           <program value="40"/>
           <controller ctrl="7" value="95"/>
           <controller ctrl="10" value="48"/>
@@ -304,6 +301,7 @@
           <synti>Fluid</synti>
           </Channel>
         <Channel name="tremolo">
+          <controller ctrl="32" value="17"/>
           <program value="44"/>
           <synti>Fluid</synti>
           </Channel>
@@ -317,7 +315,7 @@
         <bracket type="1" span="2" col="0"/>
         </Staff>
       <trackName>Soprano/Alto</trackName>
-      <Instrument>
+      <Instrument id="voice">
         <trackName>Soprano/Alto</trackName>
         <minPitchP>55</minPitchP>
         <maxPitchP>84</maxPitchP>
@@ -353,6 +351,7 @@
           <gateTime>100</gateTime>
           </Articulation>
         <Channel>
+          <controller ctrl="32" value="17"/>
           <program value="52"/>
           <controller ctrl="7" value="127"/>
           <controller ctrl="10" value="45"/>
@@ -370,7 +369,7 @@
         <defaultClef>F</defaultClef>
         </Staff>
       <trackName>Tenor/Bass</trackName>
-      <Instrument>
+      <Instrument id="voice">
         <trackName>Tenor/Bass</trackName>
         <minPitchP>38</minPitchP>
         <maxPitchP>69</maxPitchP>
@@ -407,6 +406,7 @@
           <gateTime>100</gateTime>
           </Articulation>
         <Channel>
+          <controller ctrl="32" value="17"/>
           <program value="52"/>
           <controller ctrl="7" value="118"/>
           <controller ctrl="10" value="77"/>
@@ -426,7 +426,7 @@
         </Staff>
       <show>0</show>
       <trackName>Contrabass</trackName>
-      <Instrument>
+      <Instrument id="contrabass">
         <longName>Contrabass</longName>
         <shortName>Cb.</shortName>
         <trackName>Contrabass</trackName>
@@ -468,6 +468,7 @@
           <gateTime>100</gateTime>
           </Articulation>
         <Channel>
+          <controller ctrl="32" value="17"/>
           <program value="43"/>
           <controller ctrl="7" value="97"/>
           <controller ctrl="10" value="51"/>
@@ -480,6 +481,7 @@
           <synti>Fluid</synti>
           </Channel>
         <Channel name="tremolo">
+          <controller ctrl="32" value="17"/>
           <program value="44"/>
           <synti>Fluid</synti>
           </Channel>
@@ -845,6 +847,7 @@ Jos. Klug G. B. 1535
           </voice>
         </Measure>
       <Measure len="1/4">
+        <irregular>1</irregular>
         <voice>
           <Tempo>
             <tempo>1.1333299999999999</tempo>
@@ -1381,7 +1384,7 @@ Jos. Klug G. B. 1535
       <Measure>
         <MeasureNumber>
           <offset x="-0.563452" y="-1.43655"/>
-          <text>12</text>
+          <text>11</text>
           </MeasureNumber>
         <voice>
           <Fermata>
@@ -1473,7 +1476,7 @@ Jos. Klug G. B. 1535
       <Measure>
         <MeasureNumber>
           <offset x="-0.187817" y="-0.685278"/>
-          <text>13</text>
+          <text>12</text>
           </MeasureNumber>
         <voice>
           <Chord>
@@ -4180,8 +4183,6 @@ Jos. Klug G. B. 1535
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalSharp</subtype>
@@ -4202,8 +4203,6 @@ Jos. Klug G. B. 1535
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>42</pitch>
               <tpc>20</tpc>
@@ -4211,8 +4210,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>37</pitch>
               <tpc>21</tpc>
@@ -4220,8 +4217,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>30</pitch>
               <tpc>20</tpc>
@@ -4229,8 +4224,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>42</pitch>
               <tpc>20</tpc>
@@ -4248,8 +4241,6 @@ Jos. Klug G. B. 1535
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -4257,8 +4248,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -4266,8 +4255,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>37</pitch>
               <tpc>21</tpc>
@@ -4275,8 +4262,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>42</pitch>
               <tpc>20</tpc>
@@ -4294,8 +4279,6 @@ Jos. Klug G. B. 1535
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>44</pitch>
               <tpc>22</tpc>
@@ -4303,8 +4286,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>45</pitch>
               <tpc>17</tpc>
@@ -4312,8 +4293,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -4321,8 +4300,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>37</pitch>
               <tpc>21</tpc>
@@ -4342,8 +4319,6 @@ Jos. Klug G. B. 1535
         <voice>
           <Chord>
             <durationType>half</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>35</pitch>
               <tpc>19</tpc>
@@ -4351,8 +4326,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>30</pitch>
               <tpc>20</tpc>
@@ -4369,8 +4342,6 @@ Jos. Klug G. B. 1535
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>37</pitch>
               <tpc>21</tpc>
@@ -4388,8 +4359,6 @@ Jos. Klug G. B. 1535
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -4397,8 +4366,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -4406,8 +4373,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>33</pitch>
               <tpc>17</tpc>
@@ -4415,8 +4380,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>35</pitch>
               <tpc>19</tpc>
@@ -4425,8 +4388,6 @@ Jos. Klug G. B. 1535
           <Chord>
             <BeamMode>begin</BeamMode>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>37</pitch>
               <tpc>21</tpc>
@@ -4434,8 +4395,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -4453,8 +4412,6 @@ Jos. Klug G. B. 1535
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -4462,8 +4419,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>28</pitch>
               <tpc>18</tpc>
@@ -4471,8 +4426,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>33</pitch>
               <tpc>17</tpc>
@@ -4480,8 +4433,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>45</pitch>
               <tpc>17</tpc>
@@ -4489,8 +4440,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>44</pitch>
               <tpc>22</tpc>
@@ -4508,8 +4457,6 @@ Jos. Klug G. B. 1535
         <voice>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>42</pitch>
               <tpc>20</tpc>
@@ -4517,8 +4464,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -4526,8 +4471,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalSharp</subtype>
@@ -4538,8 +4481,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalSharp</subtype>
@@ -4550,8 +4491,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>42</pitch>
               <tpc>20</tpc>
@@ -4569,8 +4508,6 @@ Jos. Klug G. B. 1535
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>37</pitch>
               <tpc>21</tpc>
@@ -4578,8 +4515,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>30</pitch>
               <tpc>20</tpc>
@@ -4587,8 +4522,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalSharp</subtype>
@@ -4599,8 +4532,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -4618,8 +4549,6 @@ Jos. Klug G. B. 1535
         <voice>
           <Chord>
             <durationType>half</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>35</pitch>
               <tpc>19</tpc>
@@ -4627,8 +4556,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>28</pitch>
               <tpc>18</tpc>
@@ -4636,8 +4563,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -4645,8 +4570,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -4664,8 +4587,6 @@ Jos. Klug G. B. 1535
         <voice>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>37</pitch>
               <tpc>21</tpc>
@@ -4673,8 +4594,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>35</pitch>
               <tpc>19</tpc>
@@ -4682,8 +4601,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>33</pitch>
               <tpc>17</tpc>
@@ -4691,8 +4608,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -4700,8 +4615,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -4719,8 +4632,6 @@ Jos. Klug G. B. 1535
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalSharp</subtype>
@@ -4731,8 +4642,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>35</pitch>
               <tpc>19</tpc>
@@ -4740,8 +4649,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>37</pitch>
               <tpc>21</tpc>
@@ -4749,8 +4656,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalSharp</subtype>
@@ -4761,8 +4666,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalSharp</subtype>
@@ -4783,8 +4686,6 @@ Jos. Klug G. B. 1535
         <voice>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>42</pitch>
               <tpc>20</tpc>
@@ -4792,8 +4693,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>44</pitch>
               <tpc>22</tpc>
@@ -4802,8 +4701,6 @@ Jos. Klug G. B. 1535
           <Chord>
             <BeamMode>begin</BeamMode>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>45</pitch>
               <tpc>17</tpc>
@@ -4811,8 +4708,6 @@ Jos. Klug G. B. 1535
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>47</pitch>
               <tpc>19</tpc>
@@ -4830,8 +4725,6 @@ Jos. Klug G. B. 1535
                   </location>
                 </next>
               </Spanner>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>49</pitch>
               <tpc>21</tpc>
@@ -4846,8 +4739,6 @@ Jos. Klug G. B. 1535
                   </location>
                 </prev>
               </Spanner>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>37</pitch>
               <tpc>21</tpc>
@@ -4868,8 +4759,6 @@ Jos. Klug G. B. 1535
           <Chord>
             <dots>1</dots>
             <durationType>half</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>30</pitch>
               <tpc>20</tpc>

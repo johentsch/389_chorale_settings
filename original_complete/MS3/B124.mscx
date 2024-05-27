@@ -10,11 +10,7 @@
       <pageWidth>8.27007</pageWidth>
       <pageHeight>11.6901</pageHeight>
       <pagePrintableWidth>7.48267</pagePrintableWidth>
-      <pageEvenLeftMargin>0.393701</pageEvenLeftMargin>
-      <pageOddLeftMargin>0.393701</pageOddLeftMargin>
-      <pageEvenTopMargin>0.393701</pageEvenTopMargin>
       <pageEvenBottomMargin>0.787403</pageEvenBottomMargin>
-      <pageOddTopMargin>0.393701</pageOddTopMargin>
       <pageOddBottomMargin>0.787403</pageOddBottomMargin>
       <akkoladeDistance>6.3</akkoladeDistance>
       <maxSystemDistance>10</maxSystemDistance>
@@ -223,7 +219,7 @@
         <bracket type="1" span="2" col="0"/>
         </Staff>
       <trackName>Soprano/Alto</trackName>
-      <Instrument>
+      <Instrument id="voice">
         <trackName>Soprano/Alto</trackName>
         <minPitchP>55</minPitchP>
         <maxPitchP>84</maxPitchP>
@@ -259,6 +255,7 @@
           <gateTime>100</gateTime>
           </Articulation>
         <Channel>
+          <controller ctrl="32" value="17"/>
           <program value="52"/>
           <controller ctrl="7" value="104"/>
           <controller ctrl="10" value="46"/>
@@ -275,7 +272,7 @@
         <defaultClef>F</defaultClef>
         </Staff>
       <trackName>Tenor/Bass</trackName>
-      <Instrument>
+      <Instrument id="voice">
         <trackName>Tenor/Bass</trackName>
         <minPitchP>38</minPitchP>
         <maxPitchP>69</maxPitchP>
@@ -312,6 +309,7 @@
           <gateTime>100</gateTime>
           </Articulation>
         <Channel>
+          <controller ctrl="32" value="17"/>
           <program value="52"/>
           <controller ctrl="10" value="72"/>
           <controller ctrl="91" value="30"/>
@@ -329,7 +327,7 @@
         </Staff>
       <show>0</show>
       <trackName>Contrabass</trackName>
-      <Instrument>
+      <Instrument id="contrabass">
         <longName>Contrabass</longName>
         <shortName>Cb.</shortName>
         <trackName>Contrabass</trackName>
@@ -371,6 +369,7 @@
           <gateTime>100</gateTime>
           </Articulation>
         <Channel>
+          <controller ctrl="32" value="17"/>
           <program value="43"/>
           <controller ctrl="7" value="75"/>
           <controller ctrl="10" value="53"/>
@@ -383,6 +382,7 @@
           <synti>Fluid</synti>
           </Channel>
         <Channel name="tremolo">
+          <controller ctrl="32" value="17"/>
           <program value="44"/>
           <synti>Fluid</synti>
           </Channel>
@@ -964,6 +964,7 @@ Wolfg. Figulus 1575</text>
           </voice>
         </Measure>
       <Measure len="1/4">
+        <irregular>1</irregular>
         <voice>
           <Chord>
             <durationType>quarter</durationType>
@@ -2820,8 +2821,6 @@ Wolfg. Figulus 1575</text>
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>33</pitch>
               <tpc>17</tpc>
@@ -2839,8 +2838,6 @@ Wolfg. Figulus 1575</text>
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>45</pitch>
               <tpc>17</tpc>
@@ -2848,8 +2845,6 @@ Wolfg. Figulus 1575</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalSharp</subtype>
@@ -2860,8 +2855,6 @@ Wolfg. Figulus 1575</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>45</pitch>
               <tpc>17</tpc>
@@ -2869,8 +2862,6 @@ Wolfg. Figulus 1575</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalSharp</subtype>
@@ -2891,8 +2882,6 @@ Wolfg. Figulus 1575</text>
         <voice>
           <Chord>
             <durationType>half</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>43</pitch>
               <tpc>15</tpc>
@@ -2900,8 +2889,6 @@ Wolfg. Figulus 1575</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>31</pitch>
               <tpc>15</tpc>
@@ -2909,8 +2896,6 @@ Wolfg. Figulus 1575</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalSharp</subtype>
@@ -2931,8 +2916,6 @@ Wolfg. Figulus 1575</text>
         <voice>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>45</pitch>
               <tpc>17</tpc>
@@ -2940,8 +2923,6 @@ Wolfg. Figulus 1575</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>43</pitch>
               <tpc>15</tpc>
@@ -2949,8 +2930,6 @@ Wolfg. Figulus 1575</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>41</pitch>
               <tpc>13</tpc>
@@ -2958,8 +2937,6 @@ Wolfg. Figulus 1575</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -2967,8 +2944,6 @@ Wolfg. Figulus 1575</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -2976,8 +2951,6 @@ Wolfg. Figulus 1575</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -3033,8 +3006,6 @@ Wolfg. Figulus 1575</text>
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>33</pitch>
               <tpc>17</tpc>
@@ -3052,8 +3023,6 @@ Wolfg. Figulus 1575</text>
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>35</pitch>
               <tpc>19</tpc>
@@ -3061,8 +3030,6 @@ Wolfg. Figulus 1575</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>36</pitch>
               <tpc>14</tpc>
@@ -3070,8 +3037,6 @@ Wolfg. Figulus 1575</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -3079,8 +3044,6 @@ Wolfg. Figulus 1575</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -3088,8 +3051,6 @@ Wolfg. Figulus 1575</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>41</pitch>
               <tpc>13</tpc>
@@ -3108,8 +3069,6 @@ Wolfg. Figulus 1575</text>
           <Chord>
             <dots>1</dots>
             <durationType>half</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -3117,8 +3076,6 @@ Wolfg. Figulus 1575</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -3136,8 +3093,6 @@ Wolfg. Figulus 1575</text>
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>45</pitch>
               <tpc>17</tpc>
@@ -3145,8 +3100,6 @@ Wolfg. Figulus 1575</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>47</pitch>
               <tpc>19</tpc>
@@ -3154,8 +3107,6 @@ Wolfg. Figulus 1575</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>48</pitch>
               <tpc>14</tpc>
@@ -3163,8 +3114,6 @@ Wolfg. Figulus 1575</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>47</pitch>
               <tpc>19</tpc>
@@ -3173,8 +3122,6 @@ Wolfg. Figulus 1575</text>
           <Chord>
             <BeamMode>begin</BeamMode>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>45</pitch>
               <tpc>17</tpc>
@@ -3182,8 +3129,6 @@ Wolfg. Figulus 1575</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>43</pitch>
               <tpc>15</tpc>
@@ -3201,8 +3146,6 @@ Wolfg. Figulus 1575</text>
         <voice>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalSharp</subtype>
@@ -3213,8 +3156,6 @@ Wolfg. Figulus 1575</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -3222,8 +3163,6 @@ Wolfg. Figulus 1575</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -3231,8 +3170,6 @@ Wolfg. Figulus 1575</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>43</pitch>
               <tpc>15</tpc>
@@ -3240,8 +3177,6 @@ Wolfg. Figulus 1575</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalNatural</subtype>
@@ -3262,8 +3197,6 @@ Wolfg. Figulus 1575</text>
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -3271,8 +3204,6 @@ Wolfg. Figulus 1575</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -3280,8 +3211,6 @@ Wolfg. Figulus 1575</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>36</pitch>
               <tpc>14</tpc>
@@ -3289,8 +3218,6 @@ Wolfg. Figulus 1575</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>35</pitch>
               <tpc>19</tpc>
@@ -3298,8 +3225,6 @@ Wolfg. Figulus 1575</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>33</pitch>
               <tpc>17</tpc>
@@ -3326,8 +3251,6 @@ Wolfg. Figulus 1575</text>
                   </location>
                 </next>
               </Spanner>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>35</pitch>
               <tpc>19</tpc>
@@ -3335,8 +3258,6 @@ Wolfg. Figulus 1575</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>36</pitch>
               <tpc>14</tpc>
@@ -3351,8 +3272,6 @@ Wolfg. Figulus 1575</text>
                   </location>
                 </prev>
               </Spanner>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -3360,8 +3279,6 @@ Wolfg. Figulus 1575</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>31</pitch>
               <tpc>15</tpc>
@@ -3369,8 +3286,6 @@ Wolfg. Figulus 1575</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>43</pitch>
               <tpc>15</tpc>
@@ -3388,8 +3303,6 @@ Wolfg. Figulus 1575</text>
         <voice>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>45</pitch>
               <tpc>17</tpc>
@@ -3397,8 +3310,6 @@ Wolfg. Figulus 1575</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>43</pitch>
               <tpc>15</tpc>
@@ -3407,8 +3318,6 @@ Wolfg. Figulus 1575</text>
           <Chord>
             <BeamMode>begin</BeamMode>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>41</pitch>
               <tpc>13</tpc>
@@ -3416,8 +3325,6 @@ Wolfg. Figulus 1575</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -3425,8 +3332,6 @@ Wolfg. Figulus 1575</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -3434,8 +3339,6 @@ Wolfg. Figulus 1575</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -3456,8 +3359,6 @@ Wolfg. Figulus 1575</text>
           <Chord>
             <dots>1</dots>
             <durationType>half</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>33</pitch>
               <tpc>17</tpc>
