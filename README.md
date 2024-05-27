@@ -52,7 +52,7 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License 
 ## Cite as
 
 ```
-Alberda, G. & Hentschel, J. (2024). A digital edition of the 389 Chorale Settings (Choralgesänge) by J.S. Bach (v1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.11358762
+Alberda, G. & Hentschel, J. (2024). A digital edition of the 389 Chorale Settings (Choralgesänge) by J.S. Bach (v2.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.11358762
 ```
 
 
