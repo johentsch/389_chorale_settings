@@ -10,11 +10,7 @@
       <pageWidth>8.27007</pageWidth>
       <pageHeight>11.6901</pageHeight>
       <pagePrintableWidth>7.48267</pagePrintableWidth>
-      <pageEvenLeftMargin>0.393701</pageEvenLeftMargin>
-      <pageOddLeftMargin>0.393701</pageOddLeftMargin>
-      <pageEvenTopMargin>0.393701</pageEvenTopMargin>
       <pageEvenBottomMargin>0.787403</pageEvenBottomMargin>
-      <pageOddTopMargin>0.393701</pageOddTopMargin>
       <pageOddBottomMargin>0.787403</pageOddBottomMargin>
       <staffDistance>7.5</staffDistance>
       <akkoladeDistance>6.6</akkoladeDistance>
@@ -224,7 +220,7 @@
           </StaffType>
         </Staff>
       <trackName>Horn in F</trackName>
-      <Instrument>
+      <Instrument id="horn">
         <trackName>Horn in F</trackName>
         <minPitchP>31</minPitchP>
         <maxPitchP>77</maxPitchP>
@@ -262,6 +258,7 @@
           <gateTime>100</gateTime>
           </Articulation>
         <Channel>
+          <controller ctrl="32" value="17"/>
           <program value="60"/>
           <controller ctrl="10" value="51"/>
           <controller ctrl="91" value="24"/>
@@ -277,7 +274,7 @@
         <bracket type="1" span="2" col="0"/>
         </Staff>
       <trackName>Soprano/Alto</trackName>
-      <Instrument>
+      <Instrument id="voice">
         <trackName>Soprano/Alto</trackName>
         <minPitchP>55</minPitchP>
         <maxPitchP>84</maxPitchP>
@@ -313,6 +310,7 @@
           <gateTime>100</gateTime>
           </Articulation>
         <Channel>
+          <controller ctrl="32" value="17"/>
           <program value="52"/>
           <controller ctrl="7" value="105"/>
           <controller ctrl="10" value="58"/>
@@ -329,7 +327,7 @@
         <defaultClef>F</defaultClef>
         </Staff>
       <trackName>Tenor/Bass</trackName>
-      <Instrument>
+      <Instrument id="voice">
         <trackName>Tenor/Bass</trackName>
         <minPitchP>38</minPitchP>
         <maxPitchP>69</maxPitchP>
@@ -366,6 +364,7 @@
           <gateTime>100</gateTime>
           </Articulation>
         <Channel>
+          <controller ctrl="32" value="17"/>
           <program value="52"/>
           <controller ctrl="10" value="70"/>
           <controller ctrl="91" value="22"/>
@@ -383,7 +382,7 @@
         </Staff>
       <show>0</show>
       <trackName>Contrabass</trackName>
-      <Instrument>
+      <Instrument id="contrabass">
         <longName>Contrabass</longName>
         <shortName>Cb.</shortName>
         <trackName>Contrabass</trackName>
@@ -425,6 +424,7 @@
           <gateTime>100</gateTime>
           </Articulation>
         <Channel>
+          <controller ctrl="32" value="17"/>
           <program value="43"/>
           <controller ctrl="7" value="72"/>
           <controller ctrl="10" value="53"/>
@@ -436,6 +436,7 @@
           <synti>Fluid</synti>
           </Channel>
         <Channel name="tremolo">
+          <controller ctrl="32" value="17"/>
           <program value="44"/>
           <synti>Fluid</synti>
           </Channel>
@@ -467,6 +468,7 @@ Sethus Calvisius 1594</text>
           </Text>
         </VBox>
       <Measure len="1/4">
+        <irregular>1</irregular>
         <voice>
           <KeySig>
             <accidental>-1</accidental>
@@ -3793,8 +3795,6 @@ Sethus Calvisius 1594</text>
         <voice>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>41</pitch>
               <tpc>13</tpc>
@@ -3802,8 +3802,6 @@ Sethus Calvisius 1594</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -3821,8 +3819,6 @@ Sethus Calvisius 1594</text>
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -3830,8 +3826,6 @@ Sethus Calvisius 1594</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>36</pitch>
               <tpc>14</tpc>
@@ -3839,8 +3833,6 @@ Sethus Calvisius 1594</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>34</pitch>
               <tpc>12</tpc>
@@ -3848,8 +3840,6 @@ Sethus Calvisius 1594</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>33</pitch>
               <tpc>17</tpc>
@@ -3857,8 +3847,6 @@ Sethus Calvisius 1594</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>34</pitch>
               <tpc>12</tpc>
@@ -3888,8 +3876,6 @@ Sethus Calvisius 1594</text>
                   </location>
                 </next>
               </Spanner>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>36</pitch>
               <tpc>14</tpc>
@@ -3897,8 +3883,6 @@ Sethus Calvisius 1594</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>41</pitch>
               <tpc>13</tpc>
@@ -3906,8 +3890,6 @@ Sethus Calvisius 1594</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -3922,8 +3904,6 @@ Sethus Calvisius 1594</text>
                   </location>
                 </prev>
               </Spanner>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>34</pitch>
               <tpc>12</tpc>
@@ -3931,8 +3911,6 @@ Sethus Calvisius 1594</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>36</pitch>
               <tpc>14</tpc>
@@ -3950,8 +3928,6 @@ Sethus Calvisius 1594</text>
         <voice>
           <Chord>
             <durationType>half</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>29</pitch>
               <tpc>13</tpc>
@@ -3962,8 +3938,6 @@ Sethus Calvisius 1594</text>
             </Rest>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>41</pitch>
               <tpc>13</tpc>
@@ -3981,8 +3955,6 @@ Sethus Calvisius 1594</text>
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -3990,8 +3962,6 @@ Sethus Calvisius 1594</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>41</pitch>
               <tpc>13</tpc>
@@ -3999,8 +3969,6 @@ Sethus Calvisius 1594</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -4008,8 +3976,6 @@ Sethus Calvisius 1594</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -4017,8 +3983,6 @@ Sethus Calvisius 1594</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -4026,8 +3990,6 @@ Sethus Calvisius 1594</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -4045,8 +4007,6 @@ Sethus Calvisius 1594</text>
         <voice>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>36</pitch>
               <tpc>14</tpc>
@@ -4054,8 +4014,6 @@ Sethus Calvisius 1594</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>41</pitch>
               <tpc>13</tpc>
@@ -4063,8 +4021,6 @@ Sethus Calvisius 1594</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>43</pitch>
               <tpc>15</tpc>
@@ -4072,8 +4028,6 @@ Sethus Calvisius 1594</text>
             </Chord>
           <Chord>
             <durationType>half</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>36</pitch>
               <tpc>14</tpc>
@@ -4094,8 +4048,6 @@ Sethus Calvisius 1594</text>
             </Rest>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>41</pitch>
               <tpc>13</tpc>
@@ -4103,8 +4055,6 @@ Sethus Calvisius 1594</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -4112,8 +4062,6 @@ Sethus Calvisius 1594</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -4121,8 +4069,6 @@ Sethus Calvisius 1594</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>33</pitch>
               <tpc>17</tpc>
@@ -4140,8 +4086,6 @@ Sethus Calvisius 1594</text>
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>34</pitch>
               <tpc>12</tpc>
@@ -4149,8 +4093,6 @@ Sethus Calvisius 1594</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>36</pitch>
               <tpc>14</tpc>
@@ -4167,8 +4109,6 @@ Sethus Calvisius 1594</text>
                   </location>
                 </next>
               </Spanner>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -4176,8 +4116,6 @@ Sethus Calvisius 1594</text>
             </Chord>
           <Chord>
             <durationType>16th</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>36</pitch>
               <tpc>14</tpc>
@@ -4185,8 +4123,6 @@ Sethus Calvisius 1594</text>
             </Chord>
           <Chord>
             <durationType>16th</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>34</pitch>
               <tpc>12</tpc>
@@ -4195,8 +4131,6 @@ Sethus Calvisius 1594</text>
           <Chord>
             <BeamMode>mid</BeamMode>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>33</pitch>
               <tpc>17</tpc>
@@ -4211,8 +4145,6 @@ Sethus Calvisius 1594</text>
                   </location>
                 </prev>
               </Spanner>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>34</pitch>
               <tpc>12</tpc>
@@ -4230,8 +4162,6 @@ Sethus Calvisius 1594</text>
         <voice>
           <Chord>
             <durationType>half</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>36</pitch>
               <tpc>14</tpc>
@@ -4242,8 +4172,6 @@ Sethus Calvisius 1594</text>
             </Rest>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>41</pitch>
               <tpc>13</tpc>
@@ -4333,8 +4261,6 @@ Sethus Calvisius 1594</text>
             </Rest>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -4342,8 +4268,6 @@ Sethus Calvisius 1594</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <Accidental>
                 <subtype>accidentalFlat</subtype>
@@ -4354,8 +4278,6 @@ Sethus Calvisius 1594</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -4363,8 +4285,6 @@ Sethus Calvisius 1594</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>36</pitch>
               <tpc>14</tpc>
@@ -4382,8 +4302,6 @@ Sethus Calvisius 1594</text>
         <voice>
           <Chord>
             <durationType>half</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>34</pitch>
               <tpc>12</tpc>
@@ -4394,8 +4312,6 @@ Sethus Calvisius 1594</text>
             </Rest>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>41</pitch>
               <tpc>13</tpc>
@@ -4413,8 +4329,6 @@ Sethus Calvisius 1594</text>
         <voice>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -4422,8 +4336,6 @@ Sethus Calvisius 1594</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>38</pitch>
               <tpc>16</tpc>
@@ -4431,8 +4343,6 @@ Sethus Calvisius 1594</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>40</pitch>
               <tpc>18</tpc>
@@ -4440,8 +4350,6 @@ Sethus Calvisius 1594</text>
             </Chord>
           <Chord>
             <durationType>quarter</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>41</pitch>
               <tpc>13</tpc>
@@ -4468,8 +4376,6 @@ Sethus Calvisius 1594</text>
                   </location>
                 </next>
               </Spanner>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>36</pitch>
               <tpc>14</tpc>
@@ -4477,8 +4383,6 @@ Sethus Calvisius 1594</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>41</pitch>
               <tpc>13</tpc>
@@ -4486,8 +4390,6 @@ Sethus Calvisius 1594</text>
             </Chord>
           <Chord>
             <durationType>eighth</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>34</pitch>
               <tpc>12</tpc>
@@ -4502,8 +4404,6 @@ Sethus Calvisius 1594</text>
                   </location>
                 </prev>
               </Spanner>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>36</pitch>
               <tpc>14</tpc>
@@ -4524,8 +4424,6 @@ Sethus Calvisius 1594</text>
           <Chord>
             <dots>1</dots>
             <durationType>half</durationType>
-            <Stem>
-              </Stem>
             <Note>
               <pitch>29</pitch>
               <tpc>13</tpc>
