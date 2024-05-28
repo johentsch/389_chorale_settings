@@ -36,6 +36,7 @@ The "mother of all datasets" is available as two versions, each contained in a s
 
 * `original_complete`: Gertim Alberda's original MuseScore files converted to uncompressed 
   MuseScore 3 format (`.mscx`)
+* `vocal_parts_only`: Alternative version of the dataset containing no instrumental parts.
 
 ## Version history
 
