@@ -67,6 +67,8 @@ The numbers are in accordance with the Breitkopf edition which orders them alpha
 This table keeps track of certain characteristics of the scores.
 
 * `Measure numbers`: In these scores the measure numbers changed from `v1.0` to `v2.0`.
+* `Parts`: These scores contain instrumental parts in the `original_complete` version, which have been removed in the 
+  `vocal_parts_only` version.
 
 | Chorale | Measure<br/>numbers | Parts  |
 |---------|---------------------|--------|
