@@ -10,11 +10,7 @@
       <pageWidth>8.27007</pageWidth>
       <pageHeight>11.6901</pageHeight>
       <pagePrintableWidth>7.48267</pagePrintableWidth>
-      <pageEvenLeftMargin>0.393701</pageEvenLeftMargin>
-      <pageOddLeftMargin>0.393701</pageOddLeftMargin>
-      <pageEvenTopMargin>0.393701</pageEvenTopMargin>
       <pageEvenBottomMargin>0.787403</pageEvenBottomMargin>
-      <pageOddTopMargin>0.393701</pageOddTopMargin>
       <pageOddBottomMargin>0.787403</pageOddBottomMargin>
       <akkoladeDistance>6.3</akkoladeDistance>
       <maxSystemDistance>10</maxSystemDistance>
@@ -224,7 +220,7 @@
         <bracket type="1" span="2" col="0"/>
         </Staff>
       <trackName>Soprano/Alto</trackName>
-      <Instrument>
+      <Instrument id="voice">
         <trackName>Soprano/Alto</trackName>
         <minPitchP>55</minPitchP>
         <maxPitchP>84</maxPitchP>
@@ -260,6 +256,7 @@
           <gateTime>100</gateTime>
           </Articulation>
         <Channel>
+          <controller ctrl="32" value="17"/>
           <program value="52"/>
           <controller ctrl="7" value="111"/>
           <controller ctrl="10" value="51"/>
@@ -277,7 +274,7 @@
         <distOffset>0.180104</distOffset>
         </Staff>
       <trackName>Tenor/Bass</trackName>
-      <Instrument>
+      <Instrument id="voice">
         <trackName>Tenor/Bass</trackName>
         <minPitchP>38</minPitchP>
         <maxPitchP>69</maxPitchP>
@@ -314,6 +311,7 @@
           <gateTime>100</gateTime>
           </Articulation>
         <Channel>
+          <controller ctrl="32" value="17"/>
           <program value="52"/>
           <controller ctrl="7" value="101"/>
           <controller ctrl="10" value="73"/>
@@ -949,12 +947,6 @@ Joh. Krüger, Prax. piet. 1653</text>
             <visible>0</visible>
             <text><sym>metNoteQuarterUp</sym> = 77.6</text>
             </Tempo>
-          <StaffText>
-            <placement>below</placement>
-            <color r="255" g="0" b="0" a="255"/>
-            <offset x="-7.02406" y="24.0182"/>
-            <text>*1. The C3 was added to be singable for the Bass. The C2, originally there, is set here as a continuo low C, played here by a Contrabass)</text>
-            </StaffText>
           <Fermata>
             <subtype>fermataAbove</subtype>
             <timeStretch>1.02</timeStretch>
@@ -1779,35 +1771,12 @@ Joh. Krüger, Prax. piet. 1653</text>
             </Chord>
           </voice>
         <voice>
-          <StaffText>
-            <color r="255" g="0" b="0" a="255"/>
-            <offset x="1.80104" y="-2.05917"/>
-            <text>*1.</text>
-            </StaffText>
           <Chord>
             <durationType>whole</durationType>
             <Note>
               <color r="255" g="0" b="0" a="255"/>
-              <pitch>48</pitch>
-              <tpc>14</tpc>
-              </Note>
-            </Chord>
-          </voice>
-        <voice>
-          <StaffText>
-            <placement>below</placement>
-            <color r="170" g="0" b="0" a="255"/>
-            <offset x="-1.44083" y="2.94604"/>
-            <text>Cont. (orig.)</text>
-            </StaffText>
-          <Chord>
-            <small>1</small>
-            <durationType>whole</durationType>
-            <Note>
-              <color r="170" g="0" b="0" a="255"/>
               <pitch>36</pitch>
               <tpc>14</tpc>
-              <play>0</play>
               </Note>
             </Chord>
           </voice>
@@ -1860,12 +1829,17 @@ Joh. Krüger, Prax. piet. 1653</text>
           </voice>
         <voice>
           <Chord>
-            <durationType>quarter</durationType>
+            <durationType>eighth</durationType>
             <Note>
-              <color r="255" g="0" b="0" a="255"/>
               <pitch>48</pitch>
               <tpc>14</tpc>
-              <mirror>right</mirror>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <pitch>36</pitch>
+              <tpc>14</tpc>
               </Note>
             </Chord>
           <Chord>
@@ -1894,55 +1868,6 @@ Joh. Krüger, Prax. piet. 1653</text>
             <Note>
               <pitch>53</pitch>
               <tpc>13</tpc>
-              </Note>
-            </Chord>
-          </voice>
-        <voice>
-          <StaffText>
-            <placement>below</placement>
-            <color r="255" g="0" b="0" a="255"/>
-            <offset x="-7.02406" y="8.3492"/>
-            <text>*2. The C3, quarter note, was added for the Bass. The 2 eighth notes (original), with the low C2, is set to be played also by Cont., here a Contrabass)</text>
-            </StaffText>
-          <StaffText>
-            <color r="255" g="0" b="0" a="255"/>
-            <offset x="1.98115" y="-2.05917"/>
-            <text>*2.</text>
-            </StaffText>
-          <Beam>
-            <color r="170" g="0" b="0" a="255"/>
-            <Fragment>
-              <y1>7.31437</y1>
-              <y2>8.31437</y2>
-              </Fragment>
-            </Beam>
-          <Chord>
-            <offset x="2" y="0"/>
-            <small>1</small>
-            <durationType>eighth</durationType>
-            <Stem>
-              <color r="170" g="0" b="0" a="255"/>
-              </Stem>
-            <StemDirection>down</StemDirection>
-            <Note>
-              <color r="170" g="0" b="0" a="255"/>
-              <pitch>48</pitch>
-              <tpc>14</tpc>
-              <play>0</play>
-              </Note>
-            </Chord>
-          <Chord>
-            <small>1</small>
-            <durationType>eighth</durationType>
-            <Stem>
-              <color r="170" g="0" b="0" a="255"/>
-              </Stem>
-            <StemDirection>down</StemDirection>
-            <Note>
-              <color r="170" g="0" b="0" a="255"/>
-              <pitch>36</pitch>
-              <tpc>14</tpc>
-              <play>0</play>
               </Note>
             </Chord>
           </voice>

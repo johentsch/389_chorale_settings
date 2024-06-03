@@ -256,6 +256,7 @@
           <gateTime>100</gateTime>
           </Articulation>
         <Channel>
+          <controller ctrl="0" value="0"/>
           <controller ctrl="32" value="17"/>
           <program value="52"/>
           <synti>Fluid</synti>
@@ -307,6 +308,7 @@
           <gateTime>100</gateTime>
           </Articulation>
         <Channel>
+          <controller ctrl="0" value="0"/>
           <controller ctrl="32" value="17"/>
           <program value="52"/>
           <synti>Fluid</synti>
@@ -2187,17 +2189,6 @@ J.S. Bach (1685-1750))</text>
             </Chord>
           </voice>
         </Measure>
-      <VBox>
-        <height>10</height>
-        <bottomGap>0</bottomGap>
-        <boxAutoSize>0</boxAutoSize>
-        <Text>
-          <style>Frame</style>
-          <size>11</size>
-          <offset x="3.78219" y="-1.59135"/>
-          <text>* The small brown notes present either Continuo or Oboe (at the end)</text>
-          </Text>
-        </VBox>
       </Staff>
     <Staff id="2">
       <Measure len="1/4">
@@ -2492,16 +2483,6 @@ J.S. Bach (1685-1750))</text>
                 <role>1</role>
                 <subtype>accidentalNatural</subtype>
                 </Accidental>
-              <Spanner type="Tie">
-                <Tie>
-                  </Tie>
-                <next>
-                  <location>
-                    <voices>1</voices>
-                    <fractions>1/8</fractions>
-                    </location>
-                  </next>
-                </Spanner>
               <pitch>48</pitch>
               <tpc>14</tpc>
               </Note>
@@ -2545,87 +2526,6 @@ J.S. Bach (1685-1750))</text>
             <Note>
               <pitch>55</pitch>
               <tpc>15</tpc>
-              </Note>
-            </Chord>
-          </voice>
-        <voice>
-          <location>
-            <fractions>1/2</fractions>
-            </location>
-          <StaffText>
-            <placement>below</placement>
-            <offset x="0.900521" y="1.50521"/>
-            <text>*</text>
-            </StaffText>
-          <Beam>
-            <color r="170" g="0" b="0" a="255"/>
-            <Fragment>
-              <y1>4.53543</y1>
-              <y2>6.34961</y2>
-              </Fragment>
-            </Beam>
-          <Chord>
-            <small>1</small>
-            <durationType>eighth</durationType>
-            <Stem>
-              <color r="170" g="0" b="0" a="255"/>
-              </Stem>
-            <StemDirection>down</StemDirection>
-            <Note>
-              <color r="170" g="0" b="0" a="255"/>
-              <Spanner type="Tie">
-                <prev>
-                  <location>
-                    <voices>-1</voices>
-                    <fractions>-1/8</fractions>
-                    </location>
-                  </prev>
-                </Spanner>
-              <pitch>48</pitch>
-              <tpc>14</tpc>
-              <play>0</play>
-              </Note>
-            </Chord>
-          <Chord>
-            <small>1</small>
-            <durationType>eighth</durationType>
-            <Stem>
-              <color r="170" g="0" b="0" a="255"/>
-              </Stem>
-            <StemDirection>down</StemDirection>
-            <Note>
-              <color r="170" g="0" b="0" a="255"/>
-              <pitch>47</pitch>
-              <tpc>19</tpc>
-              <play>0</play>
-              </Note>
-            </Chord>
-          <Chord>
-            <small>1</small>
-            <durationType>eighth</durationType>
-            <Stem>
-              <color r="170" g="0" b="0" a="255"/>
-              </Stem>
-            <StemDirection>down</StemDirection>
-            <Note>
-              <color r="170" g="0" b="0" a="255"/>
-              <pitch>45</pitch>
-              <tpc>17</tpc>
-              <play>0</play>
-              </Note>
-            </Chord>
-          <Chord>
-            <small>1</small>
-            <durationType>eighth</durationType>
-            <Stem>
-              <color r="170" g="0" b="0" a="255"/>
-              </Stem>
-            <StemDirection>down</StemDirection>
-            <Note>
-              <color r="170" g="0" b="0" a="255"/>
-              <pitch>43</pitch>
-              <tpc>15</tpc>
-              <play>0</play>
               </Note>
             </Chord>
           </voice>
@@ -2722,73 +2622,6 @@ J.S. Bach (1685-1750))</text>
             <Note>
               <pitch>55</pitch>
               <tpc>15</tpc>
-              </Note>
-            </Chord>
-          </voice>
-        <voice>
-          <Chord>
-            <small>1</small>
-            <durationType>quarter</durationType>
-            <Spanner type="Slur">
-              <Slur>
-                <SlurSegment no="0">
-                  <o1 x="-0.844238" y="1.01309"/>
-                  <o4 x="-0.67539" y="-0.67539"/>
-                  <offset x="0.5" y="-0.506543"/>
-                  </SlurSegment>
-                </Slur>
-              <next>
-                <location>
-                  <fractions>1/4</fractions>
-                  </location>
-                </next>
-              </Spanner>
-            <Stem>
-              <color r="170" g="0" b="0" a="255"/>
-              <userLen>-0.337695</userLen>
-              </Stem>
-            <StemDirection>down</StemDirection>
-            <Note>
-              <color r="170" g="0" b="0" a="255"/>
-              <pitch>50</pitch>
-              <tpc>16</tpc>
-              <play>0</play>
-              </Note>
-            </Chord>
-          <Chord>
-            <small>1</small>
-            <durationType>quarter</durationType>
-            <Spanner type="Slur">
-              <prev>
-                <location>
-                  <fractions>-1/4</fractions>
-                  </location>
-                </prev>
-              </Spanner>
-            <Stem>
-              <color r="170" g="0" b="0" a="255"/>
-              <userLen>-0.337695</userLen>
-              </Stem>
-            <StemDirection>down</StemDirection>
-            <Note>
-              <color r="170" g="0" b="0" a="255"/>
-              <pitch>38</pitch>
-              <tpc>16</tpc>
-              <play>0</play>
-              </Note>
-            </Chord>
-          <Chord>
-            <small>1</small>
-            <durationType>quarter</durationType>
-            <Stem>
-              <color r="170" g="0" b="0" a="255"/>
-              </Stem>
-            <StemDirection>down</StemDirection>
-            <Note>
-              <color r="170" g="0" b="0" a="255"/>
-              <pitch>43</pitch>
-              <tpc>15</tpc>
-              <play>0</play>
               </Note>
             </Chord>
           </voice>
@@ -2991,26 +2824,6 @@ J.S. Bach (1685-1750))</text>
               </Note>
             </Chord>
           </voice>
-        <voice>
-          <location>
-            <fractions>1/4</fractions>
-            </location>
-          <Chord>
-            <small>1</small>
-            <durationType>quarter</durationType>
-            <Stem>
-              <color r="170" g="0" b="0" a="255"/>
-              <userLen>-0.168848</userLen>
-              </Stem>
-            <StemDirection>down</StemDirection>
-            <Note>
-              <color r="170" g="0" b="0" a="255"/>
-              <pitch>40</pitch>
-              <tpc>18</tpc>
-              <play>0</play>
-              </Note>
-            </Chord>
-          </voice>
         </Measure>
       <Measure>
         <voice>
@@ -3187,55 +3000,6 @@ J.S. Bach (1685-1750))</text>
               </Note>
             </Chord>
           </voice>
-        <voice>
-          <location>
-            <fractions>3/4</fractions>
-            </location>
-          <Beam>
-            <color r="170" g="0" b="0" a="255"/>
-            <Fragment>
-              <y1>4.12044</y1>
-              <y2>4.56831</y2>
-              </Fragment>
-            </Beam>
-          <Chord>
-            <small>1</small>
-            <durationType>eighth</durationType>
-            <Stem>
-              <color r="170" g="0" b="0" a="255"/>
-              </Stem>
-            <StemDirection>down</StemDirection>
-            <Note>
-              <color r="170" g="0" b="0" a="255"/>
-              <Accidental>
-                <role>1</role>
-                <subtype>accidentalNatural</subtype>
-                </Accidental>
-              <pitch>50</pitch>
-              <tpc>16</tpc>
-              <play>0</play>
-              </Note>
-            </Chord>
-          <Chord>
-            <small>1</small>
-            <durationType>eighth</durationType>
-            <Stem>
-              <color r="170" g="0" b="0" a="255"/>
-              </Stem>
-            <StemDirection>down</StemDirection>
-            <Note>
-              <color r="170" g="0" b="0" a="255"/>
-              <Accidental>
-                <role>1</role>
-                <subtype>accidentalNatural</subtype>
-                <offset x="-1.11563" y="0.1"/>
-                </Accidental>
-              <pitch>48</pitch>
-              <tpc>14</tpc>
-              <play>0</play>
-              </Note>
-            </Chord>
-          </voice>
         </Measure>
       <Measure>
         <voice>
@@ -3359,134 +3123,6 @@ J.S. Bach (1685-1750))</text>
             <Note>
               <pitch>52</pitch>
               <tpc>18</tpc>
-              </Note>
-            </Chord>
-          </voice>
-        <voice>
-          <Beam>
-            <color r="170" g="0" b="0" a="255"/>
-            <Fragment>
-              <y1>5.89508</y1>
-              <y2>7.57902</y2>
-              </Fragment>
-            </Beam>
-          <Chord>
-            <small>1</small>
-            <durationType>eighth</durationType>
-            <Stem>
-              <color r="170" g="0" b="0" a="255"/>
-              </Stem>
-            <StemDirection>down</StemDirection>
-            <Note>
-              <color r="170" g="0" b="0" a="255"/>
-              <pitch>47</pitch>
-              <tpc>19</tpc>
-              <play>0</play>
-              </Note>
-            </Chord>
-          <Chord>
-            <small>1</small>
-            <durationType>eighth</durationType>
-            <Stem>
-              <color r="170" g="0" b="0" a="255"/>
-              </Stem>
-            <StemDirection>down</StemDirection>
-            <Note>
-              <color r="170" g="0" b="0" a="255"/>
-              <pitch>45</pitch>
-              <tpc>17</tpc>
-              <play>0</play>
-              </Note>
-            </Chord>
-          <Chord>
-            <small>1</small>
-            <durationType>eighth</durationType>
-            <Stem>
-              <color r="170" g="0" b="0" a="255"/>
-              </Stem>
-            <StemDirection>down</StemDirection>
-            <Note>
-              <color r="170" g="0" b="0" a="255"/>
-              <pitch>43</pitch>
-              <tpc>15</tpc>
-              <play>0</play>
-              </Note>
-            </Chord>
-          <Chord>
-            <small>1</small>
-            <durationType>eighth</durationType>
-            <Stem>
-              <color r="170" g="0" b="0" a="255"/>
-              </Stem>
-            <StemDirection>down</StemDirection>
-            <Note>
-              <color r="170" g="0" b="0" a="255"/>
-              <pitch>42</pitch>
-              <tpc>20</tpc>
-              <play>0</play>
-              </Note>
-            </Chord>
-          <Beam>
-            <color r="170" g="0" b="0" a="255"/>
-            <Fragment>
-              <y1>7.65803</y1>
-              <y2>7.31606</y2>
-              </Fragment>
-            </Beam>
-          <Chord>
-            <small>1</small>
-            <durationType>eighth</durationType>
-            <Stem>
-              <color r="170" g="0" b="0" a="255"/>
-              </Stem>
-            <StemDirection>down</StemDirection>
-            <Note>
-              <color r="170" g="0" b="0" a="255"/>
-              <pitch>40</pitch>
-              <tpc>18</tpc>
-              <play>0</play>
-              </Note>
-            </Chord>
-          <Chord>
-            <small>1</small>
-            <durationType>eighth</durationType>
-            <Stem>
-              <color r="170" g="0" b="0" a="255"/>
-              </Stem>
-            <StemDirection>down</StemDirection>
-            <Note>
-              <color r="170" g="0" b="0" a="255"/>
-              <pitch>42</pitch>
-              <tpc>20</tpc>
-              <play>0</play>
-              </Note>
-            </Chord>
-          <Chord>
-            <small>1</small>
-            <durationType>eighth</durationType>
-            <Stem>
-              <color r="170" g="0" b="0" a="255"/>
-              </Stem>
-            <StemDirection>down</StemDirection>
-            <Note>
-              <color r="170" g="0" b="0" a="255"/>
-              <pitch>43</pitch>
-              <tpc>15</tpc>
-              <play>0</play>
-              </Note>
-            </Chord>
-          <Chord>
-            <small>1</small>
-            <durationType>eighth</durationType>
-            <Stem>
-              <color r="170" g="0" b="0" a="255"/>
-              </Stem>
-            <StemDirection>down</StemDirection>
-            <Note>
-              <color r="170" g="0" b="0" a="255"/>
-              <pitch>40</pitch>
-              <tpc>18</tpc>
-              <play>0</play>
               </Note>
             </Chord>
           </voice>
@@ -3808,137 +3444,6 @@ J.S. Bach (1685-1750))</text>
             <Note>
               <pitch>43</pitch>
               <tpc>15</tpc>
-              </Note>
-            </Chord>
-          </voice>
-        <voice>
-          <Beam>
-            <color r="170" g="0" b="0" a="255"/>
-            </Beam>
-          <Chord>
-            <durationType>eighth</durationType>
-            <Spanner type="Slur">
-              <Slur>
-                </Slur>
-              <next>
-                <location>
-                  <fractions>1/4</fractions>
-                  </location>
-                </next>
-              </Spanner>
-            <Stem>
-              <color r="170" g="0" b="0" a="255"/>
-              </Stem>
-            <Note>
-              <color r="170" g="0" b="0" a="255"/>
-              <visible>0</visible>
-              <pitch>55</pitch>
-              <tpc>15</tpc>
-              <play>0</play>
-              </Note>
-            </Chord>
-          <StaffText>
-            <bold>1</bold>
-            <color r="170" g="0" b="0" a="255"/>
-            <offset x="-6" y="-3.5"/>
-            <text>Ob.</text>
-            </StaffText>
-          <Chord>
-            <small>1</small>
-            <durationType>16th</durationType>
-            <Stem>
-              <color r="170" g="0" b="0" a="255"/>
-              <userLen>-0.170985</userLen>
-              </Stem>
-            <Note>
-              <color r="170" g="0" b="0" a="255"/>
-              <pitch>60</pitch>
-              <tpc>14</tpc>
-              <play>0</play>
-              </Note>
-            </Chord>
-          <Chord>
-            <small>1</small>
-            <durationType>16th</durationType>
-            <Stem>
-              <offset x="0.656594" y="-0.5"/>
-              <color r="170" g="0" b="0" a="255"/>
-              </Stem>
-            <Note>
-              <offset x="-0.2" y="-0.5"/>
-              <color r="170" g="0" b="0" a="255"/>
-              <pitch>59</pitch>
-              <tpc>19</tpc>
-              <play>0</play>
-              </Note>
-            </Chord>
-          <Beam>
-            <color r="170" g="0" b="0" a="255"/>
-            </Beam>
-          <Chord>
-            <small>1</small>
-            <durationType>eighth</durationType>
-            <Spanner type="Slur">
-              <prev>
-                <location>
-                  <fractions>-1/4</fractions>
-                  </location>
-                </prev>
-              </Spanner>
-            <Stem>
-              <color r="170" g="0" b="0" a="255"/>
-              </Stem>
-            <Note>
-              <color r="170" g="0" b="0" a="255"/>
-              <pitch>57</pitch>
-              <tpc>17</tpc>
-              <play>0</play>
-              </Note>
-            </Chord>
-          <Chord>
-            <small>1</small>
-            <durationType>16th</durationType>
-            <Stem>
-              <color r="170" g="0" b="0" a="255"/>
-              </Stem>
-            <Note>
-              <color r="170" g="0" b="0" a="255"/>
-              <pitch>59</pitch>
-              <tpc>19</tpc>
-              <play>0</play>
-              </Note>
-            </Chord>
-          <Fermata>
-            <subtype>fermataAbove</subtype>
-            <timeStretch>1.09</timeStretch>
-            <visible>0</visible>
-            </Fermata>
-          <Chord>
-            <small>1</small>
-            <durationType>16th</durationType>
-            <Stem>
-              <color r="170" g="0" b="0" a="255"/>
-              </Stem>
-            <Note>
-              <color r="170" g="0" b="0" a="255"/>
-              <pitch>60</pitch>
-              <tpc>14</tpc>
-              <play>0</play>
-              </Note>
-            </Chord>
-          <Chord>
-            <small>1</small>
-            <durationType>quarter</durationType>
-            <Stem>
-              <offset x="1.85659" y="0.5"/>
-              <color r="170" g="0" b="0" a="255"/>
-              </Stem>
-            <Note>
-              <offset x="1" y="0.5"/>
-              <color r="170" g="0" b="0" a="255"/>
-              <pitch>55</pitch>
-              <tpc>15</tpc>
-              <play>0</play>
               </Note>
             </Chord>
           </voice>

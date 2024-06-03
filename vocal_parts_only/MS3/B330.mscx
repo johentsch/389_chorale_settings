@@ -41,11 +41,7 @@
       <pageWidth>8.27007</pageWidth>
       <pageHeight>11.6901</pageHeight>
       <pagePrintableWidth>7.48267</pagePrintableWidth>
-      <pageEvenLeftMargin>0.393701</pageEvenLeftMargin>
-      <pageOddLeftMargin>0.393701</pageOddLeftMargin>
-      <pageEvenTopMargin>0.393701</pageEvenTopMargin>
       <pageEvenBottomMargin>0.787403</pageEvenBottomMargin>
-      <pageOddTopMargin>0.393701</pageOddTopMargin>
       <pageOddBottomMargin>0.787403</pageOddBottomMargin>
       <akkoladeDistance>6.3</akkoladeDistance>
       <maxSystemDistance>11</maxSystemDistance>
@@ -256,7 +252,7 @@
         <bracket type="1" span="2" col="0"/>
         </Staff>
       <trackName>Soprano/Alto</trackName>
-      <Instrument>
+      <Instrument id="voice">
         <trackName>Soprano/Alto</trackName>
         <minPitchP>55</minPitchP>
         <maxPitchP>84</maxPitchP>
@@ -292,6 +288,7 @@
           <gateTime>100</gateTime>
           </Articulation>
         <Channel>
+          <controller ctrl="32" value="17"/>
           <program value="52"/>
           <controller ctrl="7" value="124"/>
           <controller ctrl="10" value="45"/>
@@ -309,7 +306,7 @@
         <defaultClef>F</defaultClef>
         </Staff>
       <trackName>Tenor/Bass</trackName>
-      <Instrument>
+      <Instrument id="voice">
         <trackName>Tenor/Bass</trackName>
         <minPitchP>38</minPitchP>
         <maxPitchP>69</maxPitchP>
@@ -346,6 +343,7 @@
           <gateTime>100</gateTime>
           </Articulation>
         <Channel>
+          <controller ctrl="32" value="17"/>
           <program value="52"/>
           <controller ctrl="7" value="118"/>
           <controller ctrl="10" value="77"/>
@@ -638,9 +636,6 @@ Joh. Walter 1524</text>
           </voice>
         </Measure>
       <Measure>
-        <LayoutBreak>
-          <subtype>line</subtype>
-          </LayoutBreak>
         <voice>
           <Chord>
             <durationType>eighth</durationType>
@@ -2323,28 +2318,6 @@ Joh. Walter 1524</text>
               </Note>
             </Chord>
           </voice>
-        <voice>
-          <StaffText>
-            <placement>below</placement>
-            <color r="164" g="0" b="0" a="255"/>
-            <offset x="-5.94949" y="0.54932"/>
-            <text>Cont.</text>
-            </StaffText>
-          <Chord>
-            <small>1</small>
-            <durationType>quarter</durationType>
-            <Stem>
-              <color r="164" g="0" b="0" a="255"/>
-              </Stem>
-            <StemDirection>down</StemDirection>
-            <Note>
-              <color r="164" g="0" b="0" a="255"/>
-              <pitch>43</pitch>
-              <tpc>15</tpc>
-              <play>0</play>
-              </Note>
-            </Chord>
-          </voice>
         </Measure>
       <Measure>
         <voice>
@@ -2536,43 +2509,6 @@ Joh. Walter 1524</text>
               </Note>
             </Chord>
           </voice>
-        <voice>
-          <location>
-            <fractions>1/4</fractions>
-            </location>
-          <Beam>
-            <color r="164" g="0" b="0" a="255"/>
-            </Beam>
-          <Chord>
-            <offset x="1.7" y="0"/>
-            <small>1</small>
-            <durationType>eighth</durationType>
-            <Stem>
-              <color r="164" g="0" b="0" a="255"/>
-              </Stem>
-            <StemDirection>down</StemDirection>
-            <Note>
-              <color r="164" g="0" b="0" a="255"/>
-              <pitch>55</pitch>
-              <tpc>15</tpc>
-              <play>0</play>
-              </Note>
-            </Chord>
-          <Chord>
-            <small>1</small>
-            <durationType>eighth</durationType>
-            <Stem>
-              <color r="164" g="0" b="0" a="255"/>
-              </Stem>
-            <StemDirection>down</StemDirection>
-            <Note>
-              <color r="164" g="0" b="0" a="255"/>
-              <pitch>43</pitch>
-              <tpc>15</tpc>
-              <play>0</play>
-              </Note>
-            </Chord>
-          </voice>
         </Measure>
       <Measure>
         <voice>
@@ -2692,12 +2628,6 @@ Joh. Walter 1524</text>
             <durationType>quarter</durationType>
             <Spanner type="Slur">
               <Slur>
-                <SlurSegment no="0">
-                  <o1 x="-0.326639" y="-1.79651"/>
-                  <o2 x="8.74246e-19" y="0.34997"/>
-                  <o3 x="8.74246e-19" y="0.34997"/>
-                  <o4 x="-0.174985" y="0.174985"/>
-                  </SlurSegment>
                 </Slur>
               <next>
                 <location>
@@ -2999,43 +2929,6 @@ Joh. Walter 1524</text>
             <Note>
               <pitch>48</pitch>
               <tpc>14</tpc>
-              </Note>
-            </Chord>
-          </voice>
-        <voice>
-          <location>
-            <fractions>1/4</fractions>
-            </location>
-          <Beam>
-            <color r="164" g="0" b="0" a="255"/>
-            </Beam>
-          <Chord>
-            <offset x="1.7" y="0"/>
-            <small>1</small>
-            <durationType>eighth</durationType>
-            <Stem>
-              <color r="164" g="0" b="0" a="255"/>
-              </Stem>
-            <StemDirection>down</StemDirection>
-            <Note>
-              <color r="164" g="0" b="0" a="255"/>
-              <pitch>55</pitch>
-              <tpc>15</tpc>
-              <play>0</play>
-              </Note>
-            </Chord>
-          <Chord>
-            <small>1</small>
-            <durationType>eighth</durationType>
-            <Stem>
-              <color r="164" g="0" b="0" a="255"/>
-              </Stem>
-            <StemDirection>down</StemDirection>
-            <Note>
-              <color r="164" g="0" b="0" a="255"/>
-              <pitch>43</pitch>
-              <tpc>15</tpc>
-              <play>0</play>
               </Note>
             </Chord>
           </voice>
@@ -3591,21 +3484,6 @@ Joh. Walter 1524</text>
           <Chord>
             <durationType>quarter</durationType>
             <Note>
-              <Spanner type="Tie">
-                <Tie>
-                  <color r="164" g="0" b="0" a="255"/>
-                  <TieSegment no="0">
-                    <color r="164" g="0" b="0" a="255"/>
-                    </TieSegment>
-                  </Tie>
-                <next>
-                  <location>
-                    <voices>1</voices>
-                    <measures>1</measures>
-                    <fractions>-3/4</fractions>
-                    </location>
-                  </next>
-                </Spanner>
               <pitch>43</pitch>
               <tpc>15</tpc>
               </Note>
@@ -3726,70 +3604,6 @@ Joh. Walter 1524</text>
             <Note>
               <pitch>57</pitch>
               <tpc>17</tpc>
-              </Note>
-            </Chord>
-          </voice>
-        <voice>
-          <Beam>
-            <color r="164" g="0" b="0" a="255"/>
-            <Fragment>
-              <y1>6.72504</y1>
-              <y2>7.47504</y2>
-              </Fragment>
-            </Beam>
-          <Chord>
-            <small>1</small>
-            <durationType>eighth</durationType>
-            <Stem>
-              <color r="164" g="0" b="0" a="255"/>
-              </Stem>
-            <StemDirection>down</StemDirection>
-            <Note>
-              <color r="164" g="0" b="0" a="255"/>
-              <Spanner type="Tie">
-                <prev>
-                  <location>
-                    <voices>-1</voices>
-                    <measures>-1</measures>
-                    <fractions>3/4</fractions>
-                    </location>
-                  </prev>
-                </Spanner>
-              <pitch>43</pitch>
-              <tpc>15</tpc>
-              <play>0</play>
-              </Note>
-            </Chord>
-          <Chord>
-            <small>1</small>
-            <durationType>eighth</durationType>
-            <Stem>
-              <color r="164" g="0" b="0" a="255"/>
-              </Stem>
-            <StemDirection>down</StemDirection>
-            <Note>
-              <color r="164" g="0" b="0" a="255"/>
-              <pitch>41</pitch>
-              <tpc>13</tpc>
-              <play>0</play>
-              </Note>
-            </Chord>
-          <Chord>
-            <small>1</small>
-            <durationType>eighth</durationType>
-            <Stem>
-              <color r="164" g="0" b="0" a="255"/>
-              </Stem>
-            <StemDirection>down</StemDirection>
-            <Note>
-              <color r="164" g="0" b="0" a="255"/>
-              <Accidental>
-                <subtype>accidentalNatural</subtype>
-                <color r="164" g="0" b="0" a="255"/>
-                </Accidental>
-              <pitch>40</pitch>
-              <tpc>18</tpc>
-              <play>0</play>
               </Note>
             </Chord>
           </voice>
@@ -3999,51 +3813,6 @@ Joh. Walter 1524</text>
             <Note>
               <pitch>43</pitch>
               <tpc>15</tpc>
-              </Note>
-            </Chord>
-          </voice>
-        <voice>
-          <Chord>
-            <offset x="1.8" y="0"/>
-            <small>1</small>
-            <durationType>quarter</durationType>
-            <Spanner type="Slur">
-              <Slur>
-                <color r="164" g="0" b="0" a="255"/>
-                <SlurSegment no="0">
-                  <color r="164" g="0" b="0" a="255"/>
-                  </SlurSegment>
-                </Slur>
-              <next>
-                <location>
-                  <fractions>1/4</fractions>
-                  </location>
-                </next>
-              </Spanner>
-            <StemDirection>down</StemDirection>
-            <Note>
-              <color r="164" g="0" b="0" a="255"/>
-              <pitch>50</pitch>
-              <tpc>16</tpc>
-              <play>0</play>
-              </Note>
-            </Chord>
-          <Chord>
-            <small>1</small>
-            <durationType>quarter</durationType>
-            <Spanner type="Slur">
-              <prev>
-                <location>
-                  <fractions>-1/4</fractions>
-                  </location>
-                </prev>
-              </Spanner>
-            <StemDirection>down</StemDirection>
-            <Note>
-              <color r="164" g="0" b="0" a="255"/>
-              <pitch>38</pitch>
-              <tpc>16</tpc>
-              <play>0</play>
               </Note>
             </Chord>
           </voice>
