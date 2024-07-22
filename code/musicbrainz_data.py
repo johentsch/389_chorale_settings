@@ -6,6 +6,8 @@ Get track list(s) for MusicBrainz release ID.
 import os
 import argparse
 import json
+import warnings
+from typing import Optional
 from urllib import request
 
 import pandas as pd
@@ -48,15 +50,32 @@ INCLUDE_ARGS = [
 ]
 ## user-tags and user-ratings require auth
 
+RELATION_TYPES = [
+    'area',
+    'artist',
+    'event',
+    'instrument',
+    'label',
+    'place',
+    'recording',
+    'recording-level',
+    'release',
+    'release-group',
+    'series',
+    'work',
+    'work-level',
+    'url',
+]
+
 # region utils
 
 def get_type_of_mbid(mbid):
-    url = f"https://musicbrainz.org/track/{mbid}"
-    try:
-        _ = request.urlopen(url)
-        return "track"
-    except Exception:
-        pass
+    # url = f"https://musicbrainz.org/track/{mbid}"
+    # try:
+    #     _ = request.urlopen(url)
+    #     return "track"
+    # except Exception:
+    #     pass
     for typ in ['area', 'artist', 'event', 'genre', 'instrument', 'label', 'place', 'recording', 'release', 'release-group', 'series', 'work', 'url',
                 'rating', 'tag', 'collection', 'track', # non-core resources
                 ]:
@@ -115,28 +134,62 @@ def get_track_lists(release: dict) -> dict:
     return result
 
 
-def main(args):
-    mbid = args.ID
+def get_musicbrainz_data(
+        mbid: str,
+        rels: Optional[str] = None,
+        quick: bool = False
+) -> dict:
+    """ Get data from MusicBrainz API for a given MBID.
+
+    Args:
+        mbid: ID of the entity.
+        rels:
+            Pass a type of relation to retrieve only a list of JSON objects for that relation type.
+            Can be one of 'area', 'artist', 'event', 'instrument', 'label', 'place', 'recording', 'recording-level',
+            'release', 'release-group', 'series', 'work', 'work-level', or 'url'.
+        quick:
+
+    Returns:
+
+    """
     typ = get_type_of_mbid(mbid)
     if typ == 'unknown':
         raise ValueError(f"Not a valid MusicBrainz ID: {mbid}")
     print(f"MBID {mbid} belongs to a {typ}.")
+    valid_includes = VALID_INCLUDES.get(typ, [])
+    valid_includes = [incl for incl in valid_includes if not incl.startswith("user")] # would require auth
     method_name = f"get_{typ}_by_id"
     method = getattr(mb, method_name)
-    includes = [] if args.quick else VALID_INCLUDES[typ]
-    json_obj = method(id=mbid, includes=includes)
+    json_key: Optional[str] = None
+    if rels:
+        assert rels in RELATION_TYPES, f"Invalid relation type {rels!r}."
+        rels_include = f"{rels}-rels"
+        json_key = f"{rels}-relation-list"
+        assert rels_include in valid_includes, f"Relation type {rels !r} not available for entity type {typ!r}."
+        includes = [rels_include]
+        if quick:
+            warnings.warn("Argument -q/--quick is without effect when -r/--rels is used.")
+    elif quick:
+        includes = []
+    else:
+        includes = valid_includes
+    json_dict = method(id=mbid, includes=includes)
+    if json_key:
+        return json_dict[typ][json_key]
+    return json_dict
+
+def main(args):
+    json_obj = get_musicbrainz_data(args.ID, args.rels, args.quick)
     if args.output:
         filepath, ext = os.path.splitext(args.output)
         if ext == ".json":
             json_str = json.dumps(json_obj, indent=2)
-            json_str = bytes(json_str, "utf-8").decode("unicode_escape")
+            json_str = bytes(json_str, "utf-8").decode("unicode_escape") # gets rid of escaped unicode chars
             with open(args.output, "w") as f:
                 f.write(json_str)
-            # with open(args.output, "w") as f:
-            #     json.dump(json_obj, f, indent=2)
         elif ext in [".csv", ".tsv"]:
             table = pd.json_normalize(json_obj)
-            table.to_csv(args.output, sep="\t" if ext == ".tsv" else ",")
+            table.to_csv(args.output, sep="\t" if ext == ".tsv" else ",", index=False)
         else:
             raise ValueError(f"Output file extension must be .json or .csv/.tsv, but is {ext}.")
         print(f"Metadata stored to {args.output}.")
@@ -151,11 +204,11 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Get track list(s) for MusicBrainz release ID.')
     parser.add_argument('ID', help='MusicBrainz ID for a release.')
     parser.add_argument("-o", "--output", help="Store metadata to this filepath. Can be a .json or .csv/.tsv path.")
-    # parser.add_argument("-r", "--rels",
-    #                     help="When storing as .csv/.tsv, you usually want to convert one of the types of relation lists "
-    #                          "into a table rather than obtaining a table with a single row. Available relations are:\n"
-    #                          "area, artist, label, place, event, recording, release, release-group, series, work, url, instrument")
-    parser.add_argument('-q', "--quick", action="store_true", help="Retrieve only the entity, no other related entities.")
+    parser.add_argument("-r", "--rels",
+                        choices=RELATION_TYPES,
+                        help=f"When storing as .csv/.tsv, you usually want to convert one of the types of relation lists "
+                             f"into a table rather than obtaining a table with a single row.")
+    parser.add_argument('-q', "--quick", action="store_true", help="Retrieve only the entity, without related entities.")
     args = parser.parse_args()
     musicbrainz_useragent()
     main(args)
