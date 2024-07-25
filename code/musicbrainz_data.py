@@ -7,6 +7,7 @@ import os
 import argparse
 import json
 import warnings
+from time import sleep
 from typing import Optional
 from urllib import request
 
@@ -76,21 +77,21 @@ def get_type_of_mbid(mbid):
     #     return "track"
     # except Exception:
     #     pass
-    for typ in ['area', 'artist', 'event', 'genre', 'instrument', 'label', 'place', 'recording', 'release', 'release-group', 'series', 'work', 'url',
+    for typ in ['recording', 'release', 'release-group', 'series', 'work', 'area', 'artist', 'event', 'genre', 'instrument', 'label', 'place', 'url',
                 'rating', 'tag', 'collection', 'track', # non-core resources
                 ]:
         url = f"https://musicbrainz.org/ws/2/{typ}/{mbid}"
         try:
             _ = request.urlopen(url)
             return typ
-        except Exception:
-            pass
+        except Exception as e:
+            sleep(1)
     return "unknown"
 
 def musicbrainz_useragent():
     mb.set_useragent(app="dcml_metadata",
-                     version="0.0.1",
-                     contact="dcml.annotators@epfl.ch")
+                     version="0.1.0",
+                     contact="johannes.hentschel@epfl.ch")
 
 # endregion utils
 
