@@ -182,26 +182,27 @@ def get_musicbrainz_data(
         return selection
     return json_dict
 
+
+def store_json(json_object: dict | list, target: str) -> None:
+    filepath, ext = os.path.splitext(target)
+    if ext == ".json":
+        json_str = json.dumps(json_object, indent=2)
+        json_str = bytes(json_str, "utf-8").decode("unicode_escape")  # gets rid of escaped unicode chars
+        with open(target, "w") as f:
+            f.write(json_str)
+    elif ext in [".csv", ".tsv"]:
+        table = pd.json_normalize(json_object)
+        table.to_csv(target, sep="\t" if ext == ".tsv" else ",", index=False)
+    else:
+        raise ValueError(f"Output file extension must be .json or .csv/.tsv, but is {ext}.")
+    print(f"Metadata stored to {target}.")
+
 def main(args):
     json_obj = get_musicbrainz_data(args.ID, args.rels, args.quick)
     if args.output:
-        filepath, ext = os.path.splitext(args.output)
-        if ext == ".json":
-            json_str = json.dumps(json_obj, indent=2)
-            json_str = bytes(json_str, "utf-8").decode("unicode_escape") # gets rid of escaped unicode chars
-            with open(args.output, "w") as f:
-                f.write(json_str)
-        elif ext in [".csv", ".tsv"]:
-            table = pd.json_normalize(json_obj)
-            table.to_csv(args.output, sep="\t" if ext == ".tsv" else ",", index=False)
-        else:
-            raise ValueError(f"Output file extension must be .json or .csv/.tsv, but is {ext}.")
-        print(f"Metadata stored to {args.output}.")
+        store_json(json_obj, args.output)
     else:
         pretty_print(json_obj)
-
-
-
 
 
 if __name__ == '__main__':
