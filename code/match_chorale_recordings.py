@@ -14,9 +14,12 @@
 # ---
 
 # %%
+import os
+import json
 from typing import Tuple
+from pprint import pprint
 import pandas as pd
-from musicbrainz_data import get_musicbrainz_data, musicbrainz_useragent
+from musicbrainz_data import get_musicbrainz_data, musicbrainz_useragent, store_json
 
 musicbrainz_useragent()
 pd.set_option("display.max_rows", None)
@@ -126,3 +129,60 @@ joined[["title_musicbrainz", "title_wikipedia"]]
 
 # %%
 joined[joined["title_wikipedia"].isna()]
+
+# %% [markdown]
+# ## Recordings
+
+# %%
+#bach_complete_vocal = get_musicbrainz_data("1fd749e9-24fe-4c62-a1d6-5cfaa5e43287")
+filename = "bach_complete.json"
+if os.path.isfile(filename):
+    with open(filename, "r", encoding="utf-8") as f:
+        bach_complete_vocal = json.load(f)
+else:
+    bach_complete_vocal = get_musicbrainz_data("5582b212-aea7-4355-8c4c-531ed438e5fc")
+    store_json(bach_complete_vocal, filename)
+bach_complete_vocal["release"].keys()
+
+# %%
+cds = bach_complete_vocal["release"]["medium-list"]
+print(f"Collection contains {len(cds)} CDs.")
+
+# %%
+for cd in cds[121:127]:
+    print(f"{cd['position']}: {cd['title']}")
+
+# %%
+chorale_cds = cds[121:127]
+n_tracks = 0
+for chorale_cd in chorale_cds:
+    n_tracks += chorale_cd["track-count"]
+print(f"Contains {n_tracks} chorale recordings")
+
+# %%
+for cd in chorale_cds:
+    print(cd.keys())
+    for track in cd["track-list"]:
+        print(track.keys())
+        print(track["id"])
+        print(track["title"])
+        print(track["recording"])
+        break
+    break
+
+# %%
+recording = get_musicbrainz_data("f92fa5a3-dbb9-4404-a009-d8aa5e923cb5")["recording"]
+
+# %%
+print(recording.keys())
+work_relations = recording["work-relation-list"]
+assert len(work_relations) == 1
+work_relation = work_relations[0]["work"]
+pprint(work_relation)
+
+# %%
+relations = get_musicbrainz_data("f92fa5a3-dbb9-4404-a009-d8aa5e923cb5", rels="work")
+print(relations)
+
+# %%
+get_musicbrainz_data("a37470f9-c28e-4a71-98f1-901594c396f3")
