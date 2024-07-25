@@ -175,7 +175,11 @@ def get_musicbrainz_data(
         includes = valid_includes
     json_dict = method(id=mbid, includes=includes)
     if json_key:
-        return json_dict[typ][json_key]
+        selection = json_dict[typ].get(json_key)
+        if not selection:
+            raise KeyError(f"Key {json_key!r} not found in JSON response. Available keys: {json_dict[typ].keys()}\n"
+                             f"{json_dict}")
+        return selection
     return json_dict
 
 def main(args):
