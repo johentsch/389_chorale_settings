@@ -187,7 +187,7 @@ def store_json(json_object: dict | list, target: str) -> None:
     filepath, ext = os.path.splitext(target)
     if ext == ".json":
         json_str = json.dumps(json_object, indent=2)
-        json_str = bytes(json_str, "utf-8").decode("unicode_escape")  # gets rid of escaped unicode chars
+        #json_str = bytes(json_str, "utf-8").decode("unicode_escape")  # gets rid of escaped unicode chars
         with open(target, "w") as f:
             f.write(json_str)
     elif ext in [".csv", ".tsv"]:
