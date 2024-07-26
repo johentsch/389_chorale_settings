@@ -16,8 +16,9 @@
 # %%
 import os
 import json
+from time import sleep
 from typing import Tuple
-from pprint import pprint
+from pprint import pformat, pprint
 import pandas as pd
 from musicbrainz_data import get_musicbrainz_data, musicbrainz_useragent, store_json
 
@@ -160,29 +161,54 @@ for chorale_cd in chorale_cds:
 print(f"Contains {n_tracks} chorale recordings")
 
 # %%
-for cd in chorale_cds:
-    print(cd.keys())
-    for track in cd["track-list"]:
-        print(track.keys())
-        print(track["id"])
-        print(track["title"])
-        print(track["recording"])
-        break
-    break
+filename = "cd_tracks.tsv"
+if os.path.isfile(filename):
+    loaded = pd.read_csv(filename, sep="\t")#, dtype=dict(track=int))
+    records = loaded.to_dict(orient="records")
+    ids = loaded.recording_id.to_list()
+else:
+    records = []
+    ids = []
+try:
+    for cd_n, cd in enumerate(chorale_cds, 1):
+        #print(cd.keys())
+        for track in cd["track-list"]:
+            #print(track.keys())
+            track_n = track["number"]
+            print(f"CD {cd_n}, Track {track_n}: ", end="")
+            track_title = track.get("title")
+            # print(track["recording"])
+            recording_id = track["recording"]["id"]
+            if recording_id in ids:
+                print("done.")
+                continue
+            recording = get_musicbrainz_data(recording_id)["recording"]
+            recording_title = recording.get("title")
+            work_relations = recording["work-relation-list"]
+            assert len(work_relations) > 0, f"Track {track_title!r} has {len(work_relations)} work relations:\n{pformat(work_relations)}"
+            work_relation = work_relations[0]["work"]
+            chorale_no = None
+            for series in work_relation["series-relation-list"]:
+                if series["series"]["id"] == '1b6aec18-db22-4f91-98fb-2a5770183374':
+                    for attr in series["attributes"]:
+                        if attr["attribute"] == "number":
+                            chorale_no = int(attr["value"])
+            records.append({
+                "cd": cd_n,
+                "track": int(track_n),
+                "track_title": track_title,
+                "recording_title": recording_title,
+                "chorale": chorale_no,
+                "recording_id": recording_id
+            })
+            sleep(1)
+    #        break
+    #    break
+finally:
+    cd_tracks = pd.DataFrame.from_records(records)
+    cd_tracks.to_csv(filename, sep="\t", index=False)
+    loaded = pd.read_csv(filename, sep="\t")
+    pd.testing.assert_frame_equal(cd_tracks, loaded)
 
 # %%
-recording = get_musicbrainz_data("f92fa5a3-dbb9-4404-a009-d8aa5e923cb5")["recording"]
-
-# %%
-print(recording.keys())
-work_relations = recording["work-relation-list"]
-assert len(work_relations) == 1
-work_relation = work_relations[0]["work"]
-pprint(work_relation)
-
-# %%
-relations = get_musicbrainz_data("f92fa5a3-dbb9-4404-a009-d8aa5e923cb5", rels="work")
-print(relations)
-
-# %%
-get_musicbrainz_data("a37470f9-c28e-4a71-98f1-901594c396f3")
+len(records)
