@@ -16,6 +16,7 @@
 # %%
 import os
 import json
+import editdistance
 from time import sleep
 from typing import Tuple
 from pprint import pformat, pprint
@@ -212,3 +213,37 @@ finally:
 
 # %%
 len(records)
+
+# %%
+cd_tracks.head()
+
+# %%
+path = "/mnt/DATA/Music/Choral Classics_ Bach (Chorales)/"
+regex = r"0(?P<cd>\d)-(?P<track>\d+) (?P<title>.+)"
+files = pd.DataFrame({"filename": os.listdir(path)})
+files = pd.concat([files, files.filename.str.extract(regex)], axis=1)
+files.loc[:, ["cd", "track"]] = files.loc[:, ["cd", "track"]].astype(int)
+files = files.sort_values(["cd", "track"]).reset_index(drop=True)
+files["bwv"] = files.title.str.extract("BWV (\d+)", expand=False)
+files.to_csv("spotify_tracks.tsv", sep="\t", index=False)
+files
+
+# %%
+cd_tracks.tail()
+
+# %%
+for file_title, catalog_title in zip(files.title.to_list(), cd_tracks.recording_title.to_list()):
+    
+
+# %%
+for file_title, catalog_title in zip(files.title.to_list(), cd_tracks.recording_title.to_list()):
+    l_len, r_len = len(file_title), len(catalog_title)
+    if l_len > r_len:
+        left = file_title[-r_len:]
+        right = catalog_title
+    else:
+        left = file_title
+        right = catalog_title[-l_len:]
+    dist = editdistance.eval(left, right)
+    print(f"{left} -- {right} => {dist}")
+    break
