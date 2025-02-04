@@ -6,7 +6,7 @@
 #       extension: .py
 #       format_name: percent
 #       format_version: '1.3'
-#       jupytext_version: 1.16.1
+#       jupytext_version: 1.16.6
 #   kernelspec:
 #     display_name: bach
 #     language: python
@@ -219,21 +219,25 @@ cd_tracks.head()
 
 # %%
 path = "/mnt/DATA/Music/Choral Classics_ Bach (Chorales)/"
-regex = r"0(?P<cd>\d)-(?P<track>\d+) (?P<title>.+)"
 files = pd.DataFrame({"filename": os.listdir(path)})
-files = pd.concat([files, files.filename.str.extract(regex)], axis=1)
-files.loc[:, ["cd", "track"]] = files.loc[:, ["cd", "track"]].astype(int)
-files = files.sort_values(["cd", "track"]).reset_index(drop=True)
-files["bwv"] = files.title.str.extract("BWV (\d+)", expand=False)
+files = files.filename.str.split(", BWV", expand=True)
+files.columns = ["filename", "bwv"]
+filenames = files.filename.str.replace(" \(.+", "", regex=True)
+filenames = filenames.str.extract(r"0(?P<cd>\d)-(?P<track>\d+) (?P<title>.+)")
+bwv = files.bwv.str.replace("\)?\.mp3", "", regex=True)
+bwv_split = bwv.str.split("- ", expand=True)
+bwv_split.columns = ["bwv", "title"]
+number_name = bwv_split.title.str.extract(r"No\. (?P<number>\d+), (?P<text>.+)")
+bwv = bwv_split.bwv + ("." + number_name.number)
+bwv = bwv.fillna(bwv_split.bwv).rename("bwv")
+text = number_name.text.fillna(filenames.title)
+inspect = pd.concat([filenames, bwv_split, bwv, number_name, text], axis=1)
+files = pd.concat([filenames, bwv, text], axis=1)
 files.to_csv("spotify_tracks.tsv", sep="\t", index=False)
 files
 
 # %%
 cd_tracks.tail()
-
-# %%
-for file_title, catalog_title in zip(files.title.to_list(), cd_tracks.recording_title.to_list()):
-    
 
 # %%
 for file_title, catalog_title in zip(files.title.to_list(), cd_tracks.recording_title.to_list()):
