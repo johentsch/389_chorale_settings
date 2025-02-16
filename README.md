@@ -38,6 +38,39 @@ The "mother of all datasets" is available as two versions, each contained in a s
   MuseScore 3 format (`.mscx`)
 * `vocal_parts_only`: Alternative version of the dataset containing no instrumental parts.
 
+### Score-to-audio alignments
+
+Version 2.3 introduces an additional set of tables of notes in the subfolder 
+`vocal_parts_only/note_alignments`. They correspond to unfolded/expanded 
+versions of the 303 chorale settings that have a counterpart in and have been aligned with the 
+recordings made by the Chamber Choir Of Europe under Nicol Matt in 1999 (e.g., CDs 122 through 127 
+(six CDs) of the release https://musicbrainz.org/release/5582b212-aea7-4355-8c4c-531ed438e5fc).
+Unfolded/expanded, here, means that they correspond to a "playthrough" respecting repeat signs and 
+first/second endings.
+This representation is a prerequisite for aligning the notes with the corresponding sounding events 
+in the recordings.
+
+First, the MusicBrainz recording IDs contained in the column `mb:recording` of the file 
+`metadata.tsv` were used to map the 303 scores (or rather, their unfolded notes TSVs) to the 
+respective audio files (which are commercial and cannot be provided). 
+Silence at the end of the audio files has been truncated beforehand using a 50 ms & -65 dB threshold. 
+
+Then, the latest version of the `synctoolbox` (1.3.2) and 
+[this Python script](https://github.com/johentsch/Aligning-audio-to-annotated-score-labels/blob/bach/align_bach.py) 
+was used to compute start and end points of each note. The timecodes were added as two additional 
+columns, `start` and `end`, to the unfolded notes TSVs.
+
+An easy way to verify them (if you happen to have the recording of the Chamber Choir of Europe) 
+is to make a copy of the relevant TSV file in `vocal_parts_only/note_alignments`,
+keeping only the last six columns (at the very least, `midi`, `start`, and `end`).
+This is because the [Sonic Visualizer](https://sonicvisualiser.org/) can only load the first few
+columns of a TSV/CSV file.
+Then you can load the aligned notes into the Sonic Visualizer like so:
+
+![Screenshot showing how to import the reduced CSV file into the Sonic Visualizer](https://hostux.pics/images/2025/02/17/sonic_visualizerc836b5e2d792d532.png)
+
+
+
 ## Version history
 
 See the [GitHub releases](https://github.com/johentsch/389_chorale_settings/releases).
