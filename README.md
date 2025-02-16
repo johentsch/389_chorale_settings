@@ -86,7 +86,7 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License 
 ## Cite as
 
 ```
-Alberda, G. & Hentschel, J. (2024). A digital edition of the 389 Chorale Settings (Choralgesänge) by J.S. Bach (v2.2) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.11358762
+Alberda, G. & Hentschel, J. (2024). A digital edition of the 389 Chorale Settings (Choralgesänge) by J.S. Bach (v2.3) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.11358762
 ```
 
 
@@ -99,7 +99,7 @@ The numbers are in accordance with the Breitkopf edition which orders them alpha
 
 This table keeps track of certain characteristics of the scores.
 
-* `Measure numbers`: In these scores the measure numbers changed from `v1.0` to `v2.2`.
+* `Measure numbers`: In these scores the measure numbers changed from `v1.0` to `v2.3`.
 * `Parts`: These scores contain instrumental parts in the `original_complete` version, which have been removed in the 
   `vocal_parts_only` version.
 * `Instrument staves`: The IDs of those staves that contain instrumental parts in the `original_complete` version
