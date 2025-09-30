@@ -108,7 +108,7 @@ This table keeps track of certain characteristics of the scores.
   to the upper score, e.g. tempo markings.
 * `Merge`: In the marked chorales, the four voices are written in individual staves in the `original_complete` version
   but have been merged into two staves in the `vocal_parts_only` version for homogeneity. `B199` is the only one
-  that remains to be typeset with four staves because it is not homophone.
+  that remains being typeset with four staves because it is not homophone.
 * `Cue notes`: In the marked chorales, the vocal staves contain cue note in the `original_complete` version
   which have been removed for the `vocal_parts_only` version.
 
